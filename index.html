@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello Me!</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<button onclick="window.location.href='subPage.html';">
-    Click For Sub Page
-</button>
+<head>
+    <script src="scripts.js"></script>
+</head>
+<body onload="newGreeting(indexWelcome)">
+    <h1 id="indexWelcome">Hello Me!</h1>
+    <p>I'm hosted with GitHub Pages.</p>
+    <button onclick="window.location.href='subPage.html';"> Click For Sub Page </button>
 </body>
 </html>
