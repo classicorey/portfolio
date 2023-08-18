@@ -1,4 +1,11 @@
+body {
+    background-color: #2D2D2F;
+}
 
+h1, p, button.homebutton{
+    color: #D9D8DB;
+    margin: 2rem;
+}
 #my-decoration {
     padding-left: 1rem;
 }

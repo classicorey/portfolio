@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
     <script src="scripts.js"></script>
 </head>
 <body onload="newGreeting(indexWelcome)">
-    <h1 id="indexWelcome">Hello Me!</h1>
+
+    <h1 id="indexWelcome"></h1>
     <p>I'm hosted with GitHub Pages.</p>
-    <button onclick="window.location.href='subPage.html';"> Click For Sub Page </button>
+    <button onclick="window.location.href='subPage.html';" class="btn btn-secondary homebutton" margin-left="2rem"> Click For Sub Page </button>
+
+    <!--Bootstrap Javascript should stay as the last thing in the body-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
 </body>
 </html>
