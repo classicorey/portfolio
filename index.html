@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="main.css" rel="stylesheet">
@@ -7,10 +8,74 @@
 </head>
 <body onload="newGreeting(indexWelcome)">
 
-    <h1 id="indexWelcome"></h1>
-    <p>I'm hosted with GitHub Pages.</p>
-    <button onclick="window.location.href='subPage.html';" class="btn btn-secondary homebutton" margin-left="2rem"> Click For Sub Page </button>
+    <div class="col-xs-1">
+      <h1 class="display-1 text-center" id="indexWelcome"></h1>
+      <h1 class="subheader">Where would you like to go now?</h1>
+    </div>
 
+    <!--<div class="container rounded selection-view py-1 px-0 py-md-1 px-md-3 my-5">
+      <div class="row">
+        <div class="col-11 col-md-9 p-0 ps-md-0 pe-md-2 d-block mx-auto">
+          <img class="img-fluid  d-md-none" src="DSC_0040.png">
+          <img class="img-fluid rounded-start d-none d-md-block" src="DSC_0040.png">
+        </div>
+        <div class="col-11 col-md-3 bg-dark mx-auto mx-md-0 d-md-none py-2 text-center">
+          <p>Head here to check out my photography.</p>
+        </div>
+        <div class="col-11 col-md-3 rounded-end bg-dark d-none d-md-block">
+          <p class="centered">This is a really great area to check out my photography!</p>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="container rounded selection-view my-4 py-1 px-0 py-md-1 px-md-3">
+      <div class="row">
+        <div class="col-11 col-md-3 bg-dark mx-auto mx-md-0 d-md-none py-2 text-center order-1">
+          <p>Head here to check out my photography.</p>
+        </div>
+        <div class="col-11 col-md-3 rounded-end bg-dark d-none d-md-block">
+          <p class="centered">This is a really great area to check out my photography!</p>
+        </div>
+        <div class="col-11 col-md-9 p-0 ps-md-2 pe-md-0 d-block mx-auto">
+          <img class="img-fluid  d-md-none" src="DSC_0040.png">
+          <img class="img-fluid rounded-start d-none d-md-block" src="DSC_0040.png">
+        </div>
+      </div>
+    </div>-->
+    <a href="photography.html">
+    <div class="container selection-view py-5">
+      <div class="row">
+        <div class="col-12 col-md-8 p-3 align-items-center px-md-5">
+          <img class="img-fluid d-md-none rounded-top-5" src="DSC_0040.png">
+          <img class="img-fluid rounded-start-5 d-none d-md-flex" src="DSC_0040.png">
+        </div>
+        <div class="col-md-4 border-start border-light d-none d-md-flex align-items-center px-5">
+          <h1>Check Out My Photography Over Here!</h1>
+        </div>
+        <div class="col d-md-none text-center border-top border-light">
+          <h1>Check Out My Photography Over Here!</h1>
+        </div>
+      </div>
+    </div>
+    </a>
+
+    <a href="subPage.html" class="link-success">
+    <div class="container selection-view py-5">
+      <div class="row">
+        <div class="col-12 col-md-8 p-3 align-items-center px-md-5 order-md-2">
+          <img class="img-fluid d-md-none rounded-top-5" src="DSC_0419.png">
+          <img class="img-fluid rounded-end-5 d-none d-md-flex" src="DSC_0419.png">
+        </div>
+        <div class="col-md-4 border-end border-light d-none d-md-flex align-items-center p-lg-5 text-end">
+          <h1>See My Professional History Here!</h1>
+        </div>
+        <div class="col d-md-none text-center border-top border-light">
+          <h1>See My Professional History Here!</h1>
+        </div>
+      </div>
+    </div>
+    </a>
     <!--Bootstrap Javascript should stay as the last thing in the body-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
