@@ -18,16 +18,16 @@ h1.subheader{
     text-align: center;
 }
 
-#my-decoration {
-    padding-left: 1rem;
+a.my-decoration {
+    padding-left: 2rem;
 }
   
-#navbar-img {
-    width: 2rem;
+img.navbar-img {
+    min-width: 2rem;
     height: 2.5rem;
 }
 
-#navbar-end {
+a.navbar-end {
     margin-right: 2rem;
 }
 
