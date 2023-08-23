@@ -47,7 +47,9 @@ async function writeGreeting(elementID)
                        "Let's have a chat.",
                        "Over here, stranger!",
                        "Well met.",
-                       "A pleasant welcome to you."
+                       "A pleasant welcome to you.",
+                       "Now in dark mode.",
+                       "Corey says 'hi'!"
                       ];
 
     //Choose a random greeting from the above array by using the index as a random number from 0 to the length of the array.
