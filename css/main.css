@@ -40,6 +40,24 @@ div.selection-view:hover{
     transition: 300ms;
 }
 
+div.welcome-div{
+    background-image:url("/images/APillarForManwe.JPG");
+    background-size: 100svw 100svh;
+    height: 100svh;
+    width: 100svw;
+    max-width: 100%;
+}
+div.welcome-text{
+    background-color: purple;
+    mix-blend-mode: hard-light;
+    height: 100svh;
+    justify-content: space-between;
+}
+h1.generated-welcome{
+    text-align: end;
+    margin-top: 50svh;
+}
+
 img.panel-left{
     border-radius: 10px 0px 0px 10px;
 }
