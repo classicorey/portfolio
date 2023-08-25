@@ -6,20 +6,40 @@
     <link href="css/main.css" rel="stylesheet">
     <script src="scripts/greetingHandler.js"></script>
 </head>
-<body onload="newGreeting(indexWelcome)">
-  <div class="container welcome-div">
+<body onload="newGreeting(indexWelcomeSmall), newGreeting(indexWelcomeBig)">
+
+  <div class="container welcome-div-small d-block d-lg-none">
     <div class="row">
       <div class="col">
       </div>
       <div class="col">
       </div>
       <div class="col welcome-text text-center">
-        <h1 class="display-1 pt-3 generated-welcome" id="indexWelcome"></h1>
+        <h1 class="display-1 pt-3 generated-welcome" id="indexWelcomeSmall"></h1>
       </div>
     </div>
   </div>
+  
+  <div class="container welcome-div d-none d-lg-block">
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col">
+      </div>
+      <div class="col welcome-text text-center">
+        <h1 class="display-1 pt-3 generated-welcome" id="indexWelcomeBig"></h1>
+      </div>
+    </div>
+  </div>
+
+
+
     <div class="col-xs-1">
       <h1 class="subheader">Where would you like to go now?</h1>
+  </div>
+  <div class="index-content rounded-start-2 rounded-end-2">
+    <h1 class="dark-text index-content-header"><span class="index-content-header">Thanks for stopping by.</span></h1>
+    <p class="dark-text">Check out my <span class="professional-text"> computer science</span> background. Or maybe you're more interested in my <span class="photography-text">photography</span>. There's a little something for almost everybody.</p>
   </div>
   <div class="showcase-link">
     <a href="photography.html">

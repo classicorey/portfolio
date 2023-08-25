@@ -3,6 +3,36 @@ html{
     min-height: 100%;
 }
 
+h1.light-text, p.light-text{
+    color: #D8D8D8;
+}
+
+h1.dark-text, p.dark-text{
+    color: #2D2D2F;
+}
+span.professional-text{
+    text-decoration-line: underline;
+    text-decoration-color: #198754;
+}
+
+span.photography-text{
+    text-decoration-line: underline;
+    text-decoration-color: #0D6EFD;
+}
+h1.index-content-header{
+    text-decoration-line: underline;
+    text-decoration-color: #2D2D2F;
+    text-decoration-thickness: 3px;
+}
+
+h1{
+    font-size: clamp(2.9rem, 4vw, 4rem);
+}
+
+p{
+    font-size: clamp(1.7rem, 2.5vw, 2.3rem);
+}
+
 body {
     background-color: #2D2D2F;
     min-height: 100%;
@@ -16,7 +46,8 @@ h1, p, button.homebutton{
 h1.subheader{
     color:#ADADAD;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 2svh;
+    padding-bottom: 4svh
 }
 
 a.my-decoration {
@@ -42,16 +73,26 @@ div.selection-view:hover{
 }
 
 div.welcome-div{
-    background-image:url("/images/APillarForManwe.JPG");
+    background-image:url("/images/APillarForManwe.png");
     background-size: 100svw 100svh;
     height: 90svh;
     width: 100svw;
     max-width: 100%;
 }
+
+div.welcome-div-small{
+    background-image:url("/images/APillarForManweCropped.png");
+    background-size: 100svw 100svh;
+    height: 90svh;
+    width: 100svw;
+    max-width: 100%;
+}
+
 div.welcome-text{
     background-color: purple;
     mix-blend-mode: hard-light;
     height: 90svh;
+    min-width: 250px;
     justify-content: space-between;
 }
 h1.generated-welcome{
@@ -79,4 +120,11 @@ h1.centered{
 div.showcase-link{
     max-width: 75rem;
     margin: 2rem auto 2rem auto;
+}
+
+div.index-content{
+    margin-right: 10svw;
+    margin-left: 10svw;
+    background-color: #C7C7C7;
+    padding: 1svh 2svw 1svh 2svw;
 }
