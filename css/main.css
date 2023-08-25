@@ -74,6 +74,7 @@ div.selection-view:hover{
 
 div.welcome-div{
     background-image:url("/images/APillarForManwe.png");
+    background-size: 100%;
     background-size: 100svw 100svh;
     height: 90svh;
     width: 100svw;
