@@ -16,6 +16,7 @@ h1, p, button.homebutton{
 h1.subheader{
     color:#ADADAD;
     text-align: center;
+    padding-top: 2rem;
 }
 
 a.my-decoration {
@@ -43,19 +44,19 @@ div.selection-view:hover{
 div.welcome-div{
     background-image:url("/images/APillarForManwe.JPG");
     background-size: 100svw 100svh;
-    height: 100svh;
+    height: 90svh;
     width: 100svw;
     max-width: 100%;
 }
 div.welcome-text{
     background-color: purple;
     mix-blend-mode: hard-light;
-    height: 100svh;
+    height: 90svh;
     justify-content: space-between;
 }
 h1.generated-welcome{
-    text-align: end;
     margin-top: 50svh;
+    padding-right: 1rem;
 }
 
 img.panel-left{
