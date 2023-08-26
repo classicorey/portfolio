@@ -69,7 +69,7 @@ div.selection-view:hover{
 
 div.welcome-div{
     background-image:url("/images/APillarForManwe.png");
-    background-size: 1000px 2000px;
+    background-size: 100px 200px;
     background-size: 100svw 100svh;
     height: 90svh;
     width: 100svw;
@@ -79,7 +79,7 @@ div.welcome-div{
 
 div.welcome-div-small{
     background-image:url("/images/APillarForManweCropped.png");
-    background-size: 2000px 1000px;
+    background-size: 200px 100px;
     background-size: 100svw 100svh;
     height: 90svh;
     min-height: 800px;
