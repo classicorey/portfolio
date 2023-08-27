@@ -33,6 +33,42 @@ body {
     min-height: 100%;
 }
 
+div.welcome-div{
+    background-image:url("/images/APillarForManwe.png");
+    background-size: 100px 200px;
+    background-size: 100% 100%;
+    height: 90svh;
+    width: 100svw;
+    max-width: 100%;
+    min-height: 800px;
+}
+
+div.welcome-div-small{
+    background-image:url("/images/APillarForManweCropped.png");
+    background-size: 200px 100px;
+    background-size: 100% 100%;
+    height: 90svh;
+    min-height: 800px;
+    width: 100svw;
+    max-width: 100%;
+}
+
+div.welcome-text{
+    background-image: linear-gradient(214deg, purple, purple, darkred);
+    mix-blend-mode: hard-light;
+    border-left: #5E032E solid 5px;
+}
+
+h1.greeting-text{
+    padding: 20px 20px 20px 20px;
+}
+
+img.filler-image{
+    width: 1px;
+    height: 90svh;
+    min-height: 800px;
+}
+
 h1, p, button.homebutton{
     color: #D9D8DB;
     text-decoration: none;
@@ -67,34 +103,6 @@ div.selection-view:hover{
     transition: 300ms;
 }
 
-div.welcome-div{
-    background-image:url("/images/APillarForManwe.png");
-    background-size: 100px 200px;
-    background-size: 100% 100%;
-    height: 90svh;
-    width: 100svw;
-    max-width: 100%;
-    min-height: 800px;
-}
-
-div.welcome-div-small{
-    background-image:url("/images/APillarForManweCropped.png");
-    background-size: 200px 100px;
-    background-size: 100% 100%;
-    height: 90svh;
-    min-height: 800px;
-    width: 100svw;
-    max-width: 100%;
-}
-
-div.welcome-text{
-    background-color: purple;
-    mix-blend-mode: hard-light;
-    height: 90svh;
-    min-height: 800px;
-    min-width: 250px;
-}
-
 img.panel-left{
     border-radius: 10px 0px 0px 10px;
 }
@@ -120,8 +128,4 @@ div.index-content{
 }
 h1.index-content-header{
     text-decoration-color: #2D2D2F;
-}
-
-div.welcome-text{
-    padding-top: 30svh;
 }
