@@ -10,6 +10,7 @@
     <title>Corey Crooks Portfolio</title>
 </head>
 <body onload="newGreeting(indexWelcomeSmall), newGreeting(indexWelcomeBig)">
+
   <div class="container welcome-div-small d-block d-lg-none">
     <div class="row">
       <div class="col">
@@ -39,57 +40,58 @@
     <div class="col-xs-1">
       <h1 class="subheader">Where would you like to go now?</h1>
     </div>
-
-  <div class="container index-content rounded-start-2 rounded-end-2">
-    <div class="row">
-      <div class="col-12 col-lg-5 align-self-center text-center">
-            <h1 class="dark-text index-content-header"><span class="index-content-header">Thanks for stopping by.</span></h1>
-      </div>
-      <div class="col">
-        <p class="dark-text">Check out my <span class="photography-text"><a class="no-decoration" href="photography.html">photography</a></span>. Or maybe you're more interested in my <span class="professional-text"><a class="no-decoration" href="professional.html">computer science</a></span> background, projects and professional work. There's a little something for almost everybody.</p>
+  <section class="index-content">
+    <div class="container index-content rounded-start-2 rounded-end-2">
+      <div class="row">
+        <div class="col-12 col-lg-5 align-self-center text-center">
+              <h1 class="dark-text index-content-header"><span class="index-content-header">Thanks for stopping by.</span></h1>
+        </div>
+        <div class="col">
+          <p class="dark-text">Check out my <span class="photography-text"><a class="no-decoration" href="photography.html">photography</a></span>. Or maybe you're more interested in my <span class="professional-text"><a class="no-decoration" href="professional.html">computer science</a></span> background, projects and professional work. There's a little something for almost everybody.</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="showcase-link">
-    <a href="photography.html">
-      <div class="container selection-view py-5">
-        <div class="row">
-          <div class="col-12 col-lg-7 p-3 align-items-center">
-            <img class="img-fluid d-lg-none rounded-top-5" src="images/DSC_0040.png">
-            <img class="img-fluid rounded-start-5 d-none d-lg-flex" src="images/DSC_0040.png">
-          </div>
-          <div class="col-1 border-end border-light d-none d-lg-flex"></div>
-          <div class="col-lg-4 d-none d-lg-flex align-items-center px-5">
-            <h1>Check Out My Photography Over Here!</h1>
-          </div>
-          <div class="col d-lg-none text-center border-top border-light">
-            <h1>Check Out My Photography Over Here!</h1>
+    <div class="showcase-link">
+      <a href="photography.html">
+        <div class="container selection-view pt-5">
+          <div class="row">
+            <div class="col-12 col-lg-7 p-3 align-items-center">
+              <img class="img-fluid d-lg-none rounded-top-5" src="images/DSC_0040.png">
+              <img class="img-fluid rounded-start-5 d-none d-lg-flex" src="images/DSC_0040.png">
+            </div>
+            <div class="col-1 border-end border-light d-none d-lg-flex"></div>
+            <div class="col-lg-4 d-none d-lg-flex align-items-center px-5">
+              <h1>Check Out My Photography Over Here!</h1>
+            </div>
+            <div class="col d-lg-none text-center border-top border-light">
+              <h1>Check Out My Photography Over Here!</h1>
+            </div>
           </div>
         </div>
-      </div>
-    </a>
-  </div>
+      </a>
+    </div>
 
-  <div class="showcase-link">
-    <a href="professional.html" class="link-success">
-      <div class="container selection-view py-5">
-        <div class="row">
-          <div class="col-12 col-lg-7 p-3 align-items-center px-lg-5 order-lg-2">
-            <img class="img-fluid d-lg-none rounded-top-5" src="images/DSC_0419.png">
-            <img class="img-fluid rounded-end-5 d-none d-lg-flex" src="images/DSC_0419.png">
-          </div>
-          <div class="col-lg-4 d-none d-lg-flex align-items-center text-end pe-5">
-            <h1>See My Professional Software and Work History Here!</h1>
-          </div>
-          <div class="col-1 border-start border-light d-none d-lg-flex"></div>
-          <div class="col d-lg-none text-center border-top border-light">
-            <h1>See My Professional Software and Work History Here!</h1>
+    <div class="showcase-link">
+      <a href="professional.html" class="link-success">
+        <div class="container selection-view">
+          <div class="row">
+            <div class="col-12 col-lg-7 p-3 align-items-center px-lg-5 order-lg-2">
+              <img class="img-fluid d-lg-none rounded-top-5" src="images/DSC_0419.png">
+              <img class="img-fluid rounded-end-5 d-none d-lg-flex" src="images/DSC_0419.png">
+            </div>
+            <div class="col-lg-4 d-none d-lg-flex align-items-center text-end pe-5">
+              <h1>See My Professional Software and Work History Here large!</h1>
+            </div>
+            <div class="col-1 border-start border-light d-none d-lg-flex"></div>
+            <div class="col d-lg-none text-center border-top border-light">
+              <h1>See My Professional Software and Work History Here small!</h1>
+            </div>
           </div>
         </div>
-      </div>
-    </a>
-  </div>
+      </a>
+    </div>
+  </section>
     <!--Bootstrap Javascript should stay as the last thing in the body-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 

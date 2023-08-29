@@ -21,11 +21,11 @@ span.photography-text{
 }
 
 h1{
-    font-size: clamp(2.9rem, 4vw, 4rem);
+    font-size: clamp(1.2rem, 4vw, 4rem);
 }
 
 p{
-    font-size: clamp(1.7rem, 2.5vw, 2.3rem);
+    font-size: clamp(.7rem, 2.5vw, 2.3rem);
 }
 
 body {
@@ -67,6 +67,7 @@ img.filler-image{
     width: 1px;
     height: 90svh;
     min-height: 800px;
+    opacity: 0;
 }
 
 h1, p, button.homebutton{
@@ -77,8 +78,8 @@ h1, p, button.homebutton{
 h1.subheader{
     color:#ADADAD;
     text-align: center;
-    padding-top: 2svh;
-    padding-bottom: 4svh
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 a.my-decoration {
@@ -132,4 +133,9 @@ div.index-content{
 }
 h1.index-content-header{
     text-decoration-color: #2D2D2F;
+}
+
+section.index-content{
+    padding: 2em 3em 2em 3em;
+    background-color: #242424;
 }
