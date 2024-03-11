@@ -10,36 +10,22 @@ function newGreeting(elementID)
 //Start method to gradually delete the text in the element as specified by the ID.
 async function eraseGreeting(elementID)
 {
-    /*
-    //Put the length of the element's text string in it's own identifying variable.
+    //Keep track of the current text of the element.
+    let currentMessage = elementID.innerText;
+    //Keep track of the length of the element.
     let upperBound = elementID.innerText.length;
 
-    //Start a for loop to iterate through the text in the element.
-    for (let i = 0; i < upperBound; i++)
+    //While there are letters to hide,
+    for (let i = upperBound; i>=0; i--)
     {
-        //Keep track of the message with it's own variable.
-        message = elementID.innerText;
-        //set the element text to the element text, except for the last letter.
-        elementID.innerText = message.slice(0, message.length-1);
+        //Hide a letter from the end of the element's text.
+        elementID.innerText= currentMessage.substr(0, i);
         //Add an underscore to mimic a cursor moving through the text.
         elementID.innerText+="_";
         //Wait for a little bit for the user to be able to see the effect.
-        await sleep(400);
-        //Remove the cursor added from the last step.
-        elementID.innerText = message.slice(0, message.length-1);*/
-        let currentMessage = elementID.innerText;
-        let upperBound = elementID.innerText.length;
-
-        for (let i = upperBound; i>=0; i--)
-        {
-            elementID.innerText= currentMessage.substr(0, i);
-            //Add an underscore to mimic a cursor moving through the text.
-            elementID.innerText+="_";
-            //Wait for a little bit for the user to be able to see the effect.
-            await sleep(120);
-        }
+        await sleep(120);
+    }
     
-
     //Call the next step.
     writeGreeting(elementID);
 }
