@@ -5,24 +5,43 @@ body{
 .headerText{
     padding: 5rem 0 5rem 0;
 }
-
 .photographyGrid{
     display: grid;
     grid-template-columns: 1fr  1fr  1fr  1fr;
     padding: 1rem 5rem 5rem 5rem;
     gap: 1rem;
 }
+.pictureContainer{
+    transform-origin: top;
+}
 
-.pictureContainer:hover .picture{
+.pictureContainer:nth-child(4n+1):not(.lastRowLeftCorner){
+    transform-origin: 0% 0%;    
+}
+
+.pictureContainer:nth-child(4n):not(.lastRowRightCorner){
+    transform-origin: 100% 0%;
+}
+
+.lastRowLeftCorner{
+    transform-origin: 0% 100%;
+}
+.lastRowRightCorner{
+    transform-origin: 100% 100%;
+}
+.lastRow{
+    transform-origin: 50% 100%;
+}
+.pictureContainer:hover{
     scale:1.75;
     transition: 500ms ease-in-out;
-    transform-origin: top;
     border-radius: 0%;
 }
 .picture{
     border-radius: 10%;
     width: 100%;
 }
+
 
 /*
     Start Media Queries
