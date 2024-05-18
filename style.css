@@ -1,0 +1,181 @@
+/*   CSS stylings for the site-wide look including complete CSS resets and debugging outlines   */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Boilerplate CSS reset to ensure content uniformity
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: "Helvetica Neue", "Helvetica", "Arial";
+    color: #170001;
+    font-size: 3rem;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1,h4{
+    font-size: 3rem;
+}
+
+h2, h3, h5, h6{
+    font-size: 2rem;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+p{
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+}
+p.multiParagraph{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: start;
+}
+
+.smallIcon{
+    width:100px;
+    height: 100px;
+}
+
+.rightSideNav{
+  height: 100%;
+  justify-content: stretch;
+}
+
+.navContainer{
+  background-image: linear-gradient(150deg, #892020, #340b0b);
+  color: white;
+  height: 100px;
+  padding-left: 2rem;
+}
+
+.navLinks{
+  clear: both;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0rem 2rem 0rem 2rem;
+}
+
+.navLinkContainer{
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navLinkContainer:hover{
+  background-color: rgb(47, 8, 8);
+  color: rgb(169, 169, 169);
+}
+
+.navHamburger{
+    width: 50px;
+    height: 50px;
+    padding: 0rem 2rem 0rem 0rem;
+}
+
+.responsiveNavContainer{
+    background-color: #1F1F1F;
+    z-index: 10;
+    color: white;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+    position: absolute;
+    width: 100%;
+}
+
+.nav-open {
+    transform: scale(1);
+  }
+
+.responsiveNavItem{
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.responsiveNavItem:Hover{
+    background-color: #B12A2A;
+    padding-left: 2rem;
+}
+
+.underConstructionAlert{
+    color: white;
+}
+.alertRow{
+    padding: 1rem 0 1rem 0;
+    background: linear-gradient(to right, #A90A0A, #A90A0A, #470404);
+}
+.alertLogo{
+    width: 75px;
+}
+
+.muted{
+    color: #b4b4b4;
+}
+/* 
+Start Media Queries 
+*/
+/* Small Screens (tablets, smartphones) */
+@media (max-width: 1545px){
+    h1, h4{
+        font-size: 3rem;
+    }
+    h2, h3, h5, h6{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+}
+
+/* 
+Start debug rulings
+*/
+.debug{
+    outline: 2px solid green;
+}
+.debugRed{
+    outline: 2px solid red;
+}

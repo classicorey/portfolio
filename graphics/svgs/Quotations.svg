@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 172 221" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-372,-212)">
+        <g id="Quotations">
+            <path d="M440,231C477.53,231 503.017,261.802 508,299C513.828,342.509 522.109,397.542 457.386,423.759C381.512,454.494 474.893,393.918 472.579,368.857C471.469,356.821 451.752,367 440,367C402.47,367 372,336.53 372,299C372,261.47 402.47,231 440,231Z" style="fill:rgb(150,151,154);"/>
+            <g transform="matrix(1,0,0,1,34,-19)">
+                <path d="M440,231C477.53,231 503.017,261.802 508,299C513.828,342.509 505.109,397.542 457.386,423.759C385.638,463.176 474.893,393.918 472.579,368.857C471.469,356.821 451.752,367 440,367C402.47,367 372,336.53 372,299C372,261.47 402.47,231 440,231Z" style="fill:white;"/>
+            </g>
+        </g>
+    </g>
+</svg>

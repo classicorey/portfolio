@@ -1,0 +1,36 @@
+body{
+    background-color: #892020;
+    color: white;
+}
+
+.fullScreen{
+    width: 100svw;
+    height: 100svh;
+}
+
+.constructionHeader{
+    width: 50%;
+    min-width: 350px;
+
+}
+.mainAlertText{
+    padding-inline: 3rem;
+    padding-top: 3rem;
+}
+
+.supportingText{
+    color: #ead6d6;
+    padding-inline: 3rem;
+}
+
+/*
+Start Media Queries 
+*/
+/* Small Screens (tablets, smartphones) */
+@media (max-width: 1545px){
+
+    .flexJustifyCenter{
+        justify-content: start;
+    }
+
+}

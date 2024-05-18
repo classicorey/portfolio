@@ -1,0 +1,186 @@
+/*   CSS stylings for the homepage index.html   */
+
+.homeHeader{
+    background-color: #1F1F1F;
+}
+
+#homeGreeting{
+    color: #D8D8D8;
+}
+
+.flowerContainer{
+    width: 100svw;
+    min-height: 80svh;
+    max-width: 100%;
+    background-image: url("graphics/pics/homeBackgroundFlower.png");
+    background-size: cover;
+}
+
+.greetingDisplay{
+    background-color:rgba(0,0,0,0.5);
+    color:#D8D8D8;
+}
+.homeH2{
+    padding-bottom: 3rem;
+}
+
+.name{
+    padding: 4rem 0 2rem 0;
+}
+
+.title{
+    color: #D8D8D8;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.icon{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    outline: 2px dashed #D8D8D8;
+    outline-offset: 20px;
+}
+
+.homeIcon{
+    width: 200px;
+    height: 200px;
+}
+
+.h3Small{
+    font-size: 2rem;
+}
+.logicSection{
+    position: relative;
+    padding: 5rem 0 5rem 0;
+}
+
+.logicDiv{
+    max-width: 1100px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 3rem 0 3rem 0;
+    margin: 0 5svw 0 5svw;
+}
+
+.logic0{
+    position: absolute;
+    width: 100%;
+    min-width: 2000px;
+    height: 100%;
+    z-index: -50;
+    animation: rotateAnimation;
+    animation-timeline: scroll(root block);
+    animation-range: 0 contain 60%;
+    transform: rotate(0deg);
+    animation-duration: 1ms;
+}
+
+.logic1{
+    position: absolute;
+    width: 100%;
+    min-width: 2000px;
+    height: 100%;
+    z-index: -50;
+    animation: rotateAnimationInverse;
+    animation-timeline: scroll(root block);
+    animation-range: 0 contain 60%;
+    transform: rotate(0deg);
+    animation-duration: 1ms;
+}
+
+.questionIcon{
+    width:200px;
+    height: 200px;
+}
+
+.questionHeader{
+    font-weight: 800;
+}
+
+.bioName{
+    color:#B12A2A;
+}
+
+.pageSelection{
+    background-image: url("graphics/svgs/shapesBackground.svg");
+    background-size: 25%;
+    background-repeat: repeat;
+    background-color: rgba(12, 5, 5, 0.95);
+    color: #FEFDFD;
+    position: relative;
+}
+
+.navigationThumbnailImg{
+    width: 720px;
+    height: 429px;
+}
+
+.workHistoryHeader{
+    text-decoration: underline solid #CC3737 10px;
+    text-underline-offset: 15px;
+    /* padding-bottom: 2rem; */
+}
+
+.photographyHeader{
+    text-decoration: underline solid #279730 10px;
+    text-underline-offset: 15px;
+}
+
+.pageSelectPtext{
+    padding-top: 3rem;
+}
+
+.pageSelectTextPadding{
+    padding-left: 3rem;
+}
+
+.pageSelectTextPaddingEnd{
+    padding-right: 3rem;
+}
+
+.philosophyHeader{
+    text-decoration: underline solid #337799 10px;
+    text-underline-offset: 15px;
+}
+
+.navigationRow{
+    background-color: rgba(12, 5, 5, 0.8);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*
+    Start Animation CSS
+*/
+
+@keyframes rotateAnimation {
+    0% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+@keyframes rotateAnimationInverse {
+    0% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/*
+    Start Media Queries
+*/
+@media (max-width: 1545px){
+
+    .pageSelectTextPadding{
+        padding: 0px 0px 0px 0px;
+    }
+    .pageSelectTextPaddingEnd{
+        padding: 0px 0px 0px 0px;
+    }
+    .navText{
+        padding: 1rem 3rem 0 3rem;
+    }
+
+    .navTitle{
+        padding-bottom: 2rem;
+        line-height: 5rem;
+    }
+    
+}

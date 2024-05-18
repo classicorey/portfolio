@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Work History</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="workHistory.css">
+    <link rel="stylesheet" href="utility.css">
+    <script src="scripts/navToggle.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <body>
+    <!-- NavBar -->
+    <div class="row fullRow navContainer flexAlignCenter">
+      <div class="col">
+        <img src="graphics/pics/classicIcon.png" class="smallIcon clickable" alt="ClassiCorey Icon" onclick="window.location.href='index.html'">
+      </div>
+      <div class="col">
+        <p>Corey Crooks Work</p>
+      </div>
+      <div class="row rightSideNav flexAlignCenter">
+        <img src="graphics/svgs/HamburgerButton.svg" class="navHamburger dNone smallDFlex" id="hamburgerButton" onclick="navToggle()">
+        <div class="col navLinkContainer smallDNone" onclick="window.location.href='workHistory.html'">
+          <p class="navLinks muted">Work History</p>
+        </div>
+        <div class="col navLinkContainer smallDNone" onclick="window.location.href='photography.html'">
+          <p class="navLinks">Photography</p>
+        </div>
+        <div class="col navLinkContainer smallDNone"  onclick="window.location.href='philosophies.html'">
+          <p class="navLinks">Design Philosophies</p>
+        </div>
+      </div>
+    </div>
+    <!-- Small Screen Nav Bar -->
+    <div class="col dFlex responsiveNavContainer" id="responsiveNavContainer">
+      <div class="row responsiveNavItem clickable" onclick="window.location.href='workHistory.html'">
+        <p class="muted">Work History</p>
+      </div>
+      <div class="row responsiveNavItem clickable" onclick="window.location.href='photography.html'">
+        <p>My Photography</p>
+      </div>
+      <div class="row responsiveNavItem clickable" onclick="window.location.href='philosophies.html'">
+        <p>My Design Philosophies</p>
+      </div>
+    </div>
+    <!-- End NavBar -->
+    
+    <section class="underConstructionAlert">
+      <div class="dFlex">
+        <div class="row fullWidth alertRow">
+          <div class="col flexAlignCenter flexJustifyCenter">
+            <img class="alertLogo" src="graphics/svgs/alertI.svg" alt="alertLogo">
+          </div>
+          <div class="col flexTriple  flexJustifyCenter">
+            <h1>Site Under Construction</h1>
+            <p>This particular page is under active construction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="workHeaderContainer">
+      <div class="col headerCol">
+        <h1 class="strongest headerText">See what I've been up to</h1>
+        <h2 class="headerText">Seattle's a big place. I'm trying to carve my home in it.</h1>
+      </div>
+    </div>
+
+    <section class="workHeader">
+      <h3 class="textCenter">Work history ordered by date of separation.</h3>
+
+      <!-- PGIP Internship grid -->
+      <div class="workGrid">
+        <div class="year">
+          <h4>2024</h4>
+        </div>
+        <div class="company">
+          <img class="pgipLogo" src="graphics/svgs/PGIPTechLogo.svg">          
+        </div>
+        <div class="title">
+          <h4>Soft Dev</h4>
+        </div>
+        <div class="description">
+          <p>Although this wasn't a typical internship working for an external company, Purdue Global gave me valuable skillsets that I was able to deploy working on projects and
+            learning industry standard tools such as Git and GitHub. I utilized these tools, and deepened my skillsets to create the very website you're viewing now. I am proud to
+            show my achievements in development and responsive design with this showcase of my potential!
+          </p>
+        </div>
+        <div class="pills">
+          <p class="pill pgipPill">Web Design</p>
+          <p class="pill pgipPill">Collaboration</p>
+          <p class="pill pgipPill">Programming</p>
+        </div>
+        <div class="contact muted">
+          <p>References available upon request. <a class="pgip" href="https://www.pgip-tech.com/">Check out their site here.</a></p>
+        </div>
+      </div>
+
+      <!-- Veo grid -->
+      <div class="workGrid">
+        <div class="year">
+          <h4>2024</h4>
+        </div>
+        <div class="company">
+          <img class="veoLogo" src="graphics/svgs/VeoLogo.svg"> 
+        </div>
+        <div class="title">
+          <h4>Delivery and Technician</h4>
+        </div>
+        <div class="description">
+          <p>I used an app on my phone to search for e-bikes within a live-service market, deploy maintained vehicles, and perform maintenance and troubleshooting depending on what that 
+              vehicle needs. I employed Veo-trained skills as well as my own technological background to solve problems and propose strategic heuristics to improve the overall operational 
+              efficiencies.</p>
+        </div>
+        <div class="pills">
+          <p class="pill veoPill">Live Service</p>
+          <p class="pill veoPill">Beta Testing</p>
+          <p class="pill veoPill">Technical Support</p>
+        </div>
+        <div class="contact muted">
+          <p>References available upon request. <a class="veo" href="https://www.veoride.com/">Check out their site here.</a></p>
+        </div>
+      </div>
+
+      <!-- Bishops grid -->
+      <div class="workGrid">
+        <div class="year">
+          <h4>2018</h4>
+        </div>
+        <div class="company">
+          <img class="bishopsLogo" src="graphics/svgs/BishopsLogo.svg">
+        </div>
+        <div class="title">
+          <h4>Receptionist</h4>
+        </div>
+        <div class="description">
+          <p>I worked as a receptionist for Bishops Cuts and Color in Capitol hill. I oversaw the shop in a managerial function by on-boarding new receptionists, processing monetary transactions,
+              testing new point-of-sales systems for vulnerabilities and improved workflows, and ensured a productive space.</p>
+        </div>
+        <div class="pills">
+          <p class="pill bishopPill">Management</p>
+          <p class="pill bishopPill">Cash Flow</p>
+          <p class="pill bishopPill">Agile Operations</p>
+        </div>
+        <div class="contact muted">
+          <p>References available upon request. <a class="bishops" href="https://bishops.co/">Check out their site here.</a></p>
+        </div>
+      </div>
+    </section>
+
+  <section class="projectsHistory">
+    <h3 class="textCenter">Project History</h3>
+    <p>this is how the text will show up.</p>
+  </section>
+
+  <section class="disclaimerFooter">
+    <p>All logos on this page are either created by me, Corey Crooks, or used with permission from their respective rights holders.</p>
+  </section>
+
+  </body>
+</html>

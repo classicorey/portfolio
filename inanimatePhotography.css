@@ -1,0 +1,45 @@
+body{
+    background-color: #272323;
+    color: white;
+}
+.headerText{
+    padding: 5rem 0 5rem 0;
+}
+
+.photographyGrid{
+    display: grid;
+    grid-template-columns: 1fr  1fr  1fr  1fr;
+    padding: 1rem 5rem 5rem 5rem;
+    gap: 1rem;
+}
+
+.pictureContainer:hover .picture{
+    scale:1.75;
+    transition: 500ms ease-in-out;
+    transform-origin: top;
+    border-radius: 0%;
+}
+.picture{
+    border-radius: 10%;
+    width: 100%;
+}
+
+/*
+    Start Media Queries
+*/
+@media (max-width: 1545px){
+
+    .hoverExplainer{
+        display: none;
+    }
+    .photographyGrid{
+        grid-template-columns: 1fr;
+        padding: 0 5svw 0 5svw;
+    }
+    .pictureContainer:hover .picture{
+        scale:1;
+        transition: 500ms linear;
+        transform-origin: top;
+    }
+    
+}

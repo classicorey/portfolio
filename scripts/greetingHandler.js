@@ -3,6 +3,8 @@
 //Start the helper chain method to have an easy way to modify how this effect starts, and what it looks like going through.
 function newGreeting(elementID)
 {
+    //Start a variable to keep track of the current greeting's index set it at -1 to ensure we can still pick the first greeting (more on that later)
+    greetingIndex = -1;
     //Call step one.
     eraseGreeting(elementID);
 }
@@ -23,7 +25,7 @@ async function eraseGreeting(elementID)
         //Add an underscore to mimic a cursor moving through the text.
         elementID.innerText+="_";
         //Wait for a little bit for the user to be able to see the effect.
-        await sleep(120);
+        await sleep(60);
     }
     
     //Call the next step.
@@ -34,31 +36,30 @@ async function eraseGreeting(elementID)
 async function writeGreeting(elementID)
 {
     //Start an array to hold all potential greetings.
-    const greetings = ["Hey there!", 
-                       "Welcome in.", 
-                       "Glad to have you in.", 
-                       "Good to see you.", 
-                       "Hello!", 
-                       "Take a look around!", 
-                       "Nice of you to stop by!",
-                       "Let's get to know each other.",
-                       "Let's have a chat.",
-                       "Over here, stranger!",
-                       "Well met.",
-                       "A pleasant welcome to you.",
-                       "Now in dark mode.",
-                       "Corey says 'hi'!"
-                      ];
+    const greetings = [
 
-    //Choose a random greeting from the above array by using the index as a random number from 0 to the length of the array.
-    chosenGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+        "Where are we going from here?",
+        "Take a look at my photography, and tell me what you think!",
+        "I have some projects on my GitHub that you should check out.",
+        "There's a page on my design philosophies, if you want to see what we agree on.",
+        "It's great to have you stop by.",
+        "I'm always open to some tips and tricks! Feel free to give me some suggestions!",
+        "All photos and graphics on this site are made by me!"
+
+                      ];
+    //Choose a new greeting                  
+    newGreetingIndex = Math.floor(Math.random() * greetings.length);
 
     //For as long as the next greeting matches the current one,
-    while (chosenGreeting == elementID.innerText)
+    while (greetingIndex == newGreetingIndex)
     {
         //Choose another one.
-        chosenGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+        newGreetingIndex = Math.floor(Math.random() * greetings.length);
     }
+    //Remember the current greeting index to compare again.
+    greetingIndex = newGreetingIndex;
+    //set the chosen greeting to fill the html content
+    chosenGreeting = greetings[newGreetingIndex];
 
     //Put the length of the element's text string in it's own identifying variable.
     upperBound = chosenGreeting.length;
@@ -71,7 +72,7 @@ async function writeGreeting(elementID)
         //Add an underscore to the element text to give the illusion of a cursor writing the message.
         elementID.innerText+="_";
         //Wait so the user can see this effect going on.
-        await sleep(100);
+        await sleep(50);
     }
     //Make sure the greeting at the end matches the chosen greeting, in case the iteration malfunctioned.
     elementID.innerText = chosenGreeting;

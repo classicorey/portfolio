@@ -1,0 +1,167 @@
+
+:root{
+    --clrBishops: #F04E25;
+    --clrVeo: #20A29F;
+    --clrPGIP: #C08E2B;
+}
+body{
+    background-color: #272323;
+}
+.workHeader{
+    color: #e2e2e2;
+    padding: 4rem 20svw 4rem 20svw;
+    position: relative;
+    overflow:hidden;
+}
+.workHeader::before {
+    content: url("graphics/svgs/BackgroundOvalRectangle.svg");
+    position: absolute;
+    width: 500px;
+    top: 0px;
+    left:0;
+    z-index: -1;
+}
+
+
+.workSubHeader{
+    color: #e2e2e2;
+}
+
+.workHeaderContainer{
+    display: flex;
+    width: 100%;
+    height: 90svh;
+    background-image: url("graphics/pics/SeattleSkyline.png");
+    background-size: cover;
+}
+
+.headerCol{
+    padding: 25svh 0 0 10%;
+}
+
+.headerText{
+    background: linear-gradient(to right, rgba(0,0,0,.7), rgba(0,0,0,.3), rgba(0,0,0,0.1), rgba(0,0,0,0));
+    padding: 1rem 1rem 1rem 2rem;
+    color: white;
+    text-shadow:
+     -1px -1px 10 #9B9B9B,  
+      1px -1px 0 #9B9B9B,
+     -1px 1px 0 #9B9B9B,
+      1px 1px 0 #9B9B9B;
+}
+
+.workGrid{
+    padding: 5rem 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'year company company company'
+    'year title title title'
+    'year description description description'
+    'year description description description'
+    'year pills pills pills'
+    'year contact contact contact';
+    gap: 1rem;
+}
+
+.company{
+    grid-area: company;
+    font-weight:800;
+}
+
+.year{
+    grid-area: year;
+    text-align: end;
+    padding-top: 1rem;
+}
+
+.title{
+    grid-area: title;
+    font-weight: 600;
+}
+
+.description{
+    grid-area: description;
+}
+
+.contact{
+    grid-area: contact;
+}       
+
+.pills{
+    grid-area: pills;
+}
+
+.pill{
+    padding: 2px 15px 2px 15px;
+    display:inline-block;
+    border-radius: 15px;
+}
+.veoPill{
+    background-image: radial-gradient(farthest-corner at 100% 100%, var(--clrVeo), black);
+    outline: 5px solid #062121;
+}
+.bishopPill{
+    background-image: radial-gradient(farthest-corner at 100% 100%, var(--clrBishops), black);
+    outline: 5px solid #3d1500;
+}
+.pgipPill{
+    background-image: radial-gradient(farthest-corner at 100% 100%, var(--clrPGIP), black);
+    outline: 5px solid #341f00;
+}
+.bishops{
+    color: var(--clrBishops);
+    text-decoration: none;
+}
+.veo{
+    color: var(--clrVeo);
+    text-decoration: none;
+}
+.pgip{
+    color: var(--clrPGIP);
+    text-decoration: none;
+}
+.pgipLogo{
+    height: 80px;
+}
+.veoLogo{
+    height: 100px;
+}
+.bishopsLogo{
+    height: 120px;
+}
+.projectsHistory{
+    color:#e2e2e2;
+    background-color: #373131;
+    padding: 5rem 5svh 0 5svh;
+}
+.disclaimerFooter{
+    background-color: #373131;
+    color: #9b9191;
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+/*
+Start Media Queries 
+*/
+/* Small Screens (tablets, smartphones) */
+@media (max-width: 1545px){
+
+    .workHeader::before {
+        left: 75%;
+    }
+
+    .workGrid{
+        grid-template-areas:
+        'year year year year'
+        'company company company company'
+        'title title title title'
+        'description description description description'
+        'pills pills pills pills'
+        'contact contact contact contact';
+    }
+
+    .year{
+        text-align: start;
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Corey Crooks | Philosophies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="philosophies.css">
+    <link rel="stylesheet" href="utility.css">
+    <script src="scripts/navToggle.js"></script>
+  </head>
+  <body> 
+    <!-- NavBar -->
+    <div class="row fullRow navContainer flexAlignCenter">
+      <div class="col">
+        <img src="graphics/pics/classicIcon.png" class="smallIcon clickable" alt="ClassiCorey Icon" onclick="window.location.href='index.html'">
+      </div>
+      <div class="col">
+        <p>Corey Crooks Philosophies</p>
+      </div>
+      <div class="row rightSideNav flexAlignCenter">
+        <img src="graphics/svgs/HamburgerButton.svg" class="navHamburger dNone smallDFlex" id="hamburgerButton" onclick="navToggle()">
+        <div class="col navLinkContainer smallDNone" onclick="window.location.href='workHistory.html'">
+          <p class="navLinks">Work History</p>
+        </div>
+        <div class="col navLinkContainer smallDNone" onclick="window.location.href='photography.html'">
+          <p class="navLinks">Photography</p>
+        </div>
+        <div class="col navLinkContainer smallDNone muted"  onclick="window.location.href='philosophies.html'">
+          <p class="navLinks">Design Philosophies</p>
+        </div>
+      </div>
+    </div>
+    <!-- Small Screen Nav Bar -->
+    <div class="col dFlex responsiveNavContainer" id="responsiveNavContainer">
+      <div class="row responsiveNavItem clickable" onclick="window.location.href='workHistory.html'">
+        <p>Work History</p>
+      </div>
+      <div class="row responsiveNavItem clickable" onclick="window.location.href='photography.html'">
+        <p>My Photography</p>
+      </div>
+      <div class="row responsiveNavItem clickable" onclick="window.location.href='philosophies.html'">
+        <p class="muted">My Design Philosophies</p>
+      </div>
+    </div>
+    <!-- End NavBar -->
+    <section class="underConstructionAlert">
+      <div class="dFlex">
+        <div class="row fullWidth alertRow">
+          <div class="col flexAlignCenter flexJustifyCenter">
+            <img class="alertLogo" src="graphics/svgs/alertI.svg" alt="alertLogo">
+          </div>
+          <div class="col flexTriple  flexJustifyCenter">
+            <h1>Site Under Construction</h1>
+            <p>This particular page is under active construction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contentContainer">
+      <h1 class="mainTitle">Design Philosophies</h1>
+      <p>Take a look at my decision&#45;making process. Why do I do things the way I do?</p>
+      <h4 class="insightTitle muted">User Accessibility</h4>
+      
+      <p class="strongest">Why are you not using optimization for img alt tags?</p>
+      <section class="philosophy">
+        <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        When I was researching best practices while developing this website, I came across a relatively disturbing discipline. In order to give you a proper
+        reason as to why I don't utilize it, let me tell you about why it exists. When you utilize a search engine to navigate to a website, the engine gathers
+        a number of key points of data in order to put each result in a list depending on how likely it is that you are trying to go there. After all, if a 
+        search engine doesn't take you where you want to go, what is the point in the first place?</p>
+        <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Well, some of the data that can be used by certain search engines include metadata for images used in websites. It's relatively clever engineering, 
+          to be honest. If a user is trying to search for pet care, a site full of puppy pictures is far more likely to have the information they need than
+          one full of automotive repair pictures. This leads right into the first main issue. The 'alt' tag for images usually pertains to the image it is
+          displaying. Usually. There are a few design philosophies out there that utilize that same method I detailed in order to trick the search engine as to
+          site relevance.
+        </p>
+        <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          This malicious behaviour, associated with SEO poisoning, utilizes the oversight of trust within the HTML language by creating alt tags on images
+          that have nothing to do with the images themselves; and instead house popular search terms regardless of image content. The picture could even be 
+          entirely blank.
+        </p>
+        <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          So why am I not utilizing this to bolster my website's search result queue? To put it quite frankly, I have a basic level of respect for my peer
+          developers. I don't need to get one up on sites by utilizing these cheap tactics because my site has a very specific utility. If you don't have the
+          URL for it, you probably don't need to see it. Why would I force my site above other more potentially useful options in the hopes of being seen by
+          users?
+        </p>
+        <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          My alt tags are utilized how they were intended in the language of HTML. It is very important to be able to translate my website throughout many
+          different use&#45;case. My capstone project in university was a presentation about accessibility in design heuristics, and I intend to capitalize on the research
+          I did for that presentation in this project. I am proud to make this website accessible to alternative content browsers such as screen readers for
+          the visually impaired users I may have.
+        </p>
+      </section>
+        
+      <h4 class="insightTitle muted">Design Implementations</h4>
+      <p class="strongest">Why do you declare so many zeros?</p>
+      <section class="philosophy">
+        <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          There are a number of different situations where I declare quite a few units. That's just how web design works. The thing is, choosing which units
+          to declare and why is the key to maintainable codebases. You may notice through looking into my source code that I have a number of instances where
+          I declare a unit to be 0. For example, I utilize longform padding delcarations such as <span class="code">padding: 0 5rem 0 5rem;</span>
+          it may seem relatively silly to have the two extra 0's when a simple <span class="code">padding-inline: 5rem;</span> would suffice.
+        </p>
+        <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          I don't actually believe that would be the smartest approach&#8212;especially when it comes to code maintenance. You see, I could easily use the
+          proper short form declarations to cut down on the extra typing required. However, when I come back to that element and decide it needs extra styling
+          in directions that I haven't yet specified, I end up putting even more time into it while trying to fix that previous mistake. When you're talking about
+          money per minute, it's more effective to already declare those placeholders. That way, it's simple to make changes on the fly.
+        </p>
+      </section>
+      
+      <p class="strongest">Why aren't you using standard <span class="code">ui</span> and <span class="code">ul</span> for your navbars?</p>
+      <section class="philosophy">
+        <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          This is an interesting one. It all stems from way back in middle school when I first dabbled in HTML and CSS.
+
+      </section>
+    </section>
+  </body>
+</html>

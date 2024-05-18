@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 470 471" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-388,-109)">
+        <g id="alertI">
+            <g transform="matrix(1,0,0,1,-184.32,-81.5977)">
+                <path d="M755.908,293.806C765.649,274.324 785.561,262.018 807.342,262.018C829.124,262.018 849.036,274.324 858.777,293.806C901.327,378.907 960.996,498.245 1000.58,577.42C1009.5,595.246 1008.54,616.416 998.066,633.369C987.588,650.323 969.079,660.642 949.149,660.642L665.536,660.642C645.606,660.642 627.096,650.323 616.619,633.369C606.141,616.416 605.188,595.246 614.101,577.42C653.689,498.245 713.358,378.907 755.908,293.806Z" style="fill:rgb(240,231,231);"/>
+            </g>
+            <g transform="matrix(1,0,0,1,229.793,149.769)">
+                <g transform="matrix(288,0,0,288,432.253,353.305)">
+                </g>
+                <text x="354.206px" y="353.305px" style="font-family:'ArialRoundedMTBold', 'Arial Rounded MT Bold', sans-serif;font-size:288px;fill:rgb(169,10,10);">i</text>
+            </g>
+        </g>
+    </g>
+</svg>

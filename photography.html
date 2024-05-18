@@ -1,68 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="css/main.css" rel="stylesheet">
-    <title>Photography</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Corey Crooks | Photography</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="photography.css">
+    <link rel="stylesheet" href="utility.css">
+    <script src="scripts/navToggle.js"></script>
+    <script src="scripts/photographySwitcher.js"></script>
   </head>
-
-<body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-    <div class="navbar-collapse collapse w-100 order-1 dual-collapse2">
-        <ul class="navbar-nav mr-auto">
-
-            <li class="nav-item active">
-                <a class="nav-link my-decoration" href="professional.html">Professional</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link my-decoration disabled" href="photography.html">Photography</a>
-            </li>
-
-        </ul>
+  <body onload="populatePhoto()">
+    <!-- NavBar -->
+    <div class="row fullRow navContainer flexAlignCenter">
+      <div class="col">
+        <img src="graphics/pics/classicIcon.png" class="smallIcon clickable" alt="ClassiCorey Icon" onclick="window.location.href='index.html'">
+      </div>
+      <div class="col">
+        <p>Corey Crooks Photography</p>
+      </div>
+      <div class="row rightSideNav flexAlignCenter">
+        <img src="graphics/svgs/HamburgerButton.svg" class="navHamburger dNone smallDFlex" id="hamburgerButton" onclick="navToggle()">
+        <div class="col navLinkContainer smallDNone" onclick="window.location.href='workHistory.html'">
+          <p class="navLinks">Work History</p>
+        </div>
+        <div class="col navLinkContainer smallDNone" onclick="window.location.href='photography.html'">
+          <p class="navLinks muted">Photography</p>
+        </div>
+        <div class="col navLinkContainer smallDNone"  onclick="window.location.href='philosophies.html'">
+          <p class="navLinks">Design Philosophies</p>
+        </div>
+      </div>
     </div>
-
-    <div class="order-lg-1 mx-auto">
-        <a class="navbar-brand" href="index.html">Take me home!</a>
+    <!-- Small Screen Nav Bar -->
+    <div class="col dFlex responsiveNavContainer" id="responsiveNavContainer">
+      <div class="row responsiveNavItem clickable" onclick="window.location.href='workHistory.html'">
+        <p>Work History</p>
+      </div>
+      <div class="row responsiveNavItem clickable" onclick="window.location.href='photography.html'">
+        <p class="muted">My Photography</p>
+      </div>
+      <div class="row responsiveNavItem clickable" onclick="window.location.href='philosophies.html'">
+        <p>My Design Philosophies</p>
+      </div>
     </div>
+    <!-- End NavBar -->
 
-    <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <section class="pictures">
 
-    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 justify-content-end mr-auto">
-      <ul class="navbar-nav">
+      <section class="inanimateScenes clickable" onclick="window.location.href='inanimatePhotography.html'">
+        <h4>Inanimate Scene Photography:</h4>
+        <div class="photographyGrid">
+          <div class="picture1"><img class="showcasePhoto gridImage" id="inanimatePhoto1" src=''></div>
+          <div class="picture2"><img class="showcasePhoto gridImage" id="inanimatePhoto2" src=''></div>
+          <div class="picture3"><img class="showcasePhoto gridImage" id="inanimatePhoto3" src=''></div>
+          <div class="picture4"><img class="showcasePhoto gridImage" id="inanimatePhoto4" src=''></div>
+        </div>
+      </section>
+      <section class="spacer"></section>
 
-        <li class="nav-item d-lg-none">
-          <a class="nav-link disabled my-decoration" href="#"><br><hr></a>
-        </li>
+      <section class="animateScenes clickable" onclick="window.location.href='animatePhotography.html'">
+        <h4>Live Scene Photography:</h4>
+        <div class="photographyGrid">
+          <div class="picture1"><img class="showcasePhoto gridImage" id='animatePhoto1' src=''></div>
+          <div class="picture2"><img class="showcasePhoto gridImage" id='animatePhoto2' src=''></div>
+          <div class="picture3"><img class="showcasePhoto gridImage" id='animatePhoto3' src=''></div>
+          <div class="picture4"><img class="showcasePhoto gridImage" id='animatePhoto4' src=''></div>
+        </div>
+      </section>
 
-        <li class="nav-item">
-          <a href="https://github.com/classicorey" class="nav-link">
-          <img class="navbar-brand navbar-img  px-3 px-lg-0" src="images/logos/GitHubLogo.png" alt="Github Logo Alt Text">
-          See my Github!
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a href="https://www.instagram.com/classicorey/" class="nav-link navbar-end">
-          <img class="navbar-brand navbar-img px-3 px-lg-0" src="images/logos/InstagramLogo.png" alt="Instagram Logo Alt Text">
-          See my Instagram!
-          </a>
-        </li>
-        
-      </ul>
-    </div>
-  </nav>
-
-  <h1>This is the photography page.</h1>
-
-  <!--Bootstrap Javascript should stay as the last thing in the body-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-</body>
-
+    </section>
+  </body>
 </html>
