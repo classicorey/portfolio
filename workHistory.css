@@ -169,7 +169,6 @@ Start Media Queries
         text-align: start;
     }
     .websiteHistory{
-        width: 100%;
-        padding: 2rem 5rem 2rem 5rem;
+        width: 90%;
     }
 }
