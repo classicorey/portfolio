@@ -55,10 +55,11 @@ body{
         grid-template-columns: 1fr;
         padding: 0 5svw 0 5svw;
     }
-    .pictureContainer:hover .picture{
+    .pictureContainer:hover{
         scale:1;
-        transition: 500ms linear;
-        transform-origin: top;
+        transition: 50ms linear;
+        transform-origin: 50% 50%;
     }
+
     
 }

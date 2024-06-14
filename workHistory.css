@@ -133,7 +133,6 @@ body{
 .projectsHistory{
     color:#e2e2e2;
     background-color: #373131;
-    padding: 5rem 5svh 0 5svh;
 }
 .disclaimerFooter{
     background-color: #373131;
@@ -141,6 +140,11 @@ body{
     padding: 2rem 5rem 2rem 5rem;
 }
 
+.websiteHistory{
+    width: 75%;
+    margin: 0 auto 0 auto;
+    padding: 5rem 0 5rem 0;
+}
 /*
 Start Media Queries 
 */
@@ -163,5 +167,9 @@ Start Media Queries
 
     .year{
         text-align: start;
+    }
+    .websiteHistory{
+        width: 100%;
+        padding: 2rem 5rem 2rem 5rem;
     }
 }
