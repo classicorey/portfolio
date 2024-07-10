@@ -59,6 +59,7 @@ body{
         scale:1;
         transition: 50ms linear;
         transform-origin: 50% 50%;
+        border-radius: 0%;
     }
 
     
