@@ -97,9 +97,19 @@
     rotate: 180deg;
 }
 
-.inline-image {
-    display:inline;
+.inlineImageLeft {
+    float: left;
+    width: 500px;
+    height: 290px;
+    padding: 0px 10px 0px 0px;
 }
+.inlineImageRight {
+    float: right;
+    width: 500px;
+    height: 290px;
+    padding: 0px 10px 0px 10px;
+}
+
 
 @media (max-width: 1545px){
 

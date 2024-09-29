@@ -145,18 +145,6 @@ body{
     margin: 0 auto 0 auto;
     padding: 5rem 0 5rem 0;
 }
-.inlineImageLeft {
-    float: left;
-    width: 500px;
-    height: 290px;
-    padding: 0px 10px 0px 0px;
-}
-.inlineImageRight {
-    float: right;
-    width: 500px;
-    height: 290px;
-    padding: 0px 10px 0px 10px;
-}
 .smallWorkParagraphImages{
     display: none;
 }
