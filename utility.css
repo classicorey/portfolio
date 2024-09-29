@@ -97,6 +97,10 @@
     rotate: 180deg;
 }
 
+.inline-image {
+    display:inline;
+}
+
 @media (max-width: 1545px){
 
     .smallDNone{

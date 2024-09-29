@@ -141,9 +141,24 @@ body{
 }
 
 .websiteHistory{
-    width: 75%;
+    width: 50%;
     margin: 0 auto 0 auto;
     padding: 5rem 0 5rem 0;
+}
+.inlineImageLeft {
+    float: left;
+    width: 500px;
+    height: 290px;
+    padding: 0px 10px 0px 0px;
+}
+.inlineImageRight {
+    float: right;
+    width: 500px;
+    height: 290px;
+    padding: 0px 10px 0px 10px;
+}
+.smallWorkParagraphImages{
+    display: none;
 }
 /*
 Start Media Queries 
@@ -170,5 +185,15 @@ Start Media Queries
     }
     .websiteHistory{
         width: 90%;
+    }
+    .inlineImageLeft{
+        display: none;
+    }
+    .inlineImageRight{
+        display: none;
+    }
+    .smallWorkParagraphImages{
+        display: block;
+        margin: 10px auto 10px auto;
     }
 }
