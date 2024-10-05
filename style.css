@@ -112,7 +112,7 @@ p.multiParagraph{
   cursor: pointer;
 }
 
-.navLinkContainer:hover{
+.navLinkContainer:hover, .navLinkContainer:focus, .navLinkContainer:active{
   background-color: rgb(47, 8, 8);
   color: rgb(169, 169, 169);
 }
@@ -142,7 +142,7 @@ p.multiParagraph{
     padding: 1rem 1rem 1rem 1rem;
 }
 
-.responsiveNavItem:Hover{
+.responsiveNavItem:hover, .responsiveNavItem:focus, .responsiveNavItem:active{
     background-color: #B12A2A;
     padding-left: 2rem;
 }

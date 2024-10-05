@@ -32,14 +32,18 @@ body{
 .lastRow{
     transform-origin: 50% 100%;
 }
-.pictureContainer:hover{
-    scale:1.75;
-    transition: 500ms ease-in-out;
-    border-radius: 0%;
-}
+
 .picture{
     border-radius: 10%;
     width: 100%;
+}
+.picture:hover, .picture:focus, .picture:active{
+    transition: 500ms ease-in-out;
+    border-radius: 0%;
+}
+.pictureContainer:hover, .pictureContainer:focus, .pictureContainer:active{
+    scale:1.75;
+    transition: 500ms ease-in-out;
 }
 
 
@@ -48,14 +52,11 @@ body{
 */
 @media (max-width: 1545px){
 
-    .hoverExplainer{
-        display: none;
-    }
     .photographyGrid{
         grid-template-columns: 1fr;
         padding: 0 5svw 0 5svw;
     }
-    .pictureContainer:hover{
+    .pictureContainer:hover,.pictureContainer:focus,.pictureContainer:active{
         scale:1;
         transition: 50ms linear;
         transform-origin: 50% 50%;
