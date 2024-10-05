@@ -60,7 +60,8 @@
     </section>
     <section class="contentContainer">
       <h1 class="mainTitle">Design Philosophies</h1>
-      <p>Take a look at my decision&#45;making process. Why do I do things the way I do?</p>
+      <p>Take a look at my decision&ndash;making process. Why do I do things the way I do?</p>
+      <section class="spacer"></section>
       <h4 class="insightTitle muted">User Accessibility</h4>
       
       <p class="strongest">Why are you not using optimization for img alt tags?</p>
@@ -90,11 +91,46 @@
         </p>
         <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           My alt tags are utilized how they were intended in the language of HTML. It is very important to be able to translate my website throughout many
-          different use&#45;case. My capstone project in university was a presentation about accessibility in design heuristics, and I intend to capitalize on the research
+          different use&ndash;case. My capstone project in university was a presentation about accessibility in design heuristics, and I intend to capitalize on the research
           I did for that presentation in this project. I am proud to make this website accessible to alternative content browsers such as screen readers for
           the visually impaired users I may have.
         </p>
       </section>
+      <p class="strongest">Do you use desktop, or mobile first design philosophies?</p>
+        <section class="philosophy">
+          <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          This is a tough question to answer. I find that each have its use&ndash;case depending on the project at hand as well as the intended audience. I
+          believe mobile&ndash;first layouts are significantly more popular now for good reason. Because of this, I have a strong leaning towards mobile&ndash;first
+          layouts in the work that I do. You may also find, however, that this site uses a desktop&ndash;first layout in addition to responsive layouts to accommodate
+          mobile and small screen patterns. So why would I dabble in both? Firstly, I need to consider who it is that should be viewing my website. 
+          </p>
+          <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          In the situations I have given this website URL to, job applications and hiring managers prefer to view my content on a desktop browser instead of mobile
+          platforms. Thus, I have adopted a desktop&ndash;first design philosophy while making this website <em>specifically</em>. Some developers may have opted
+          to go for a mobile&ndash;first design platform regardless of the end user. I find that this call is one to be decided by a project manager when working
+          in a professional environment, and I would defer to their judgement while not working on my personal projects. But for this project, I would argue that
+          it may be beneficial to look at desktop&ndash;centric designs. If my target audiences use mainly desktop platforms, they will not need to render my website
+          in mobile layouts at all. And thus, choosing to opt for a mobile&ndash;design will cost users slightly more render resources to force the conversion from
+          mobile to desktop. By choosing a desktop centric approach, this conversion is not needed, and the accompanying CSS may be discarded by the browser. This
+          may be a small optimization for my end users, but it is an optimization nonetheless. 
+          </p>
+        </section>
+      <p class="strongest">Nice scroll animation on your home page. Why don't you use that more?</p>
+        <section class="philosophy">
+          <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          In most things, I believe less is more. It's vitally important to not overwhelm users with fancy animations. At the end of the day, graphic design still
+          needs to convey information. If your designs aren't aiding the message you are trying to deliver, then why even have them in the first place? I do believe
+          in having animations to help my designs come across better to the audience of the modern internet&mdash;I think you would be hard pressed to find a website
+          today that has any weight behind it without animations at all. I consider these animations to be used sparingly&mdash;and never at the cost of ease of use.</p>
+          
+          <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Some animations, like those that used to be featured on popular websites such as Samsung or Apple's homepage, would hijack the user's
+          scrolling capability. This would play the animation of their product while keeping the user where they were instead of scrolling them further down the page. Personally,
+          I do not believe in this design for a modern audience. This design may serve to only encumber the end user, and inhibit their access to further sections of the
+          website. Instead, I use scroll&ndash;based animations sparingly like the one featured in my home page as a way of highlighting content that I believe to be
+          important for those in my target audience.
+          </p>
+        </section>
         
       <h4 class="insightTitle muted">Design Implementations</h4>
       <p class="strongest">Why do you declare so many zeros?</p>
@@ -102,11 +138,11 @@
         <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           There are a number of different situations where I declare quite a few units. That's just how web design works. The thing is, choosing which units
           to declare and why is the key to maintainable codebases. You may notice through looking into my source code that I have a number of instances where
-          I declare a unit to be 0. For example, I utilize longform padding delcarations such as <span class="code">padding: 0 5rem 0 5rem;</span>
-          it may seem relatively silly to have the two extra 0's when a simple <span class="code">padding-inline: 5rem;</span> would suffice.
+          I declare a unit to be 0. For example, I utilize longform padding declarations such as <span class="code">padding: 0 5rem 0 5rem;</span>
+          it may seem relatively silly to have the two extra 0's when a simple <span class="code">padding&ndash;inline: 5rem;</span> would suffice.
         </p>
         <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          I don't actually believe that would be the smartest approach&#8212;especially when it comes to code maintenance. You see, I could easily use the
+          I don't actually believe that would be the smartest approach&mdash;especially when it comes to code maintenance. You see, I could easily use the
           proper short form declarations to cut down on the extra typing required. However, when I come back to that element and decide it needs extra styling
           in directions that I haven't yet specified, I end up putting even more time into it while trying to fix that previous mistake. When you're talking about
           money per minute, it's more effective to already declare those placeholders. That way, it's simple to make changes on the fly.
@@ -116,8 +152,18 @@
       <p class="strongest">Why aren't you using standard <span class="code">ui</span> and <span class="code">ul</span> for your navbars?</p>
       <section class="philosophy">
         <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          This is an interesting one. It all stems from way back in middle school when I first dabbled in HTML and CSS.
+          This is an interesting one. It all stems from way back in middle school when I first dabbled in HTML and CSS. using <span class="code">ui</span> and 
+          <span class="code">ul</span> in order to structure navbars seems to be a tale as old as time itself. With some simple code, you can have a decent
+          looking navbar with some html tags, and clever CSS styling. But that's just the thing&mdash;decent. In developmental design, pros and cons are utilized
+          heavily to ensure that design visions align with user&ndash;experience. In order to greatly hone user experience over traditional designs, I have found that
+          flexbox may be used to give better control over navbar elements while maintaining the functionality of lists.</p>
 
+          <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Crucially, this does not meaningfully impede accessibility according to my research into the 
+          topic. Screen readers and accessibility devices are able to maintain relation&ndash;based operations by recognizing children and sibling elements within
+          a container. Furthermore, appropriate class names in CSS are used on top of that to strengthen the association of typical navbars to this flexbox design.
+          All in all, I am getting more fine design tuning while maintaining the same ease of use that accessibility&ndash;dependent users will expect from website development.
+          </p>
       </section>
     </section>
   </body>

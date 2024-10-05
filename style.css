@@ -5,7 +5,6 @@
    License: none (public domain)
    Boilerplate CSS reset to ensure content uniformity
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,11 +30,20 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+/* End Resets */
+
 body {
 	line-height: 1;
     font-family: "Helvetica Neue", "Helvetica", "Arial";
     color: #170001;
     font-size: 3rem;
+}
+strong{
+    font-weight: 600;
+}
+em{
+    font-weight: 600;
+    font-style: italic;
 }
 ol, ul {
 	list-style: none;

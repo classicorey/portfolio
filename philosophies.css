@@ -15,7 +15,7 @@ body{
 }
 
 .insightTitle{
-    padding: 5rem 0 0 0;
+    padding: 0 0 0 0;
 }
 
 .code{
@@ -26,4 +26,7 @@ body{
 .code::before, .code::after{
     content: "\"";
     background-color: #272323;
+}
+.philosophy{
+    padding: 0 0 4rem 0;
 }
