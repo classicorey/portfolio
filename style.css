@@ -164,9 +164,22 @@ p.multiParagraph{
 .alertLogo{
     width: 75px;
 }
+.arrowBigGap{
+    height: 25px;
+    width: 25px;
+    transition: transform 0.3s ease;
+    
+}
+.arrowRotated{
+    transform: rotate(180deg);
+}
 
 .muted{
     color: #b4b4b4;
+}
+.subCategoryNavbar{
+    transition: transform 0.3s ease;
+    transform-origin: 25% 0%;
 }
 /* 
 Start Media Queries 

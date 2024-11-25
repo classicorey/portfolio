@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="workHistory.css">
     <link rel="stylesheet" href="utility.css">
     <script src="scripts/navToggle.js"></script>
+    <script src="scripts/arrowRotate.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -39,8 +40,21 @@
       <div class="row responsiveNavItem clickable" onclick="window.location.href='workHistory.html'">
         <p class="muted">Work History</p>
       </div>
-      <div class="row responsiveNavItem clickable" onclick="window.location.href='photography.html'">
-        <p>My Photography</p>
+      <div class="row responsiveNavItem clickable">
+        <div class="col flexTriple"  onclick="window.location.href='photography.html'">
+          <p>My Photography</p>
+        </div>
+        <div class="col flexAlignEnd" onclick="arrowToggle()">
+          <img src="graphics/svgs/ArrowBigGap.png" class="arrowBigGap" id="navExpanderArrow">
+        </div>
+      </div>
+      <div class="subCategoryNavbar scale0 dNone" id="photographySubsection">
+        <div class="row responsiveNavItem clickable" onclick="window.location.href='animatephotography.html'">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Animate Photography</p>
+        </div>
+        <div class="row responsiveNavItem clickable" onclick="window.location.href='inanimatephotography.html'">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inanimate Photography</p>
+        </div>
       </div>
       <div class="row responsiveNavItem clickable" onclick="window.location.href='philosophies.html'">
         <p>My Design Philosophies</p>

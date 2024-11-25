@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="philosophies.css">
     <link rel="stylesheet" href="utility.css">
     <script src="scripts/navToggle.js"></script>
+    <script src="scripts/arrowRotate.js"></script>
   </head>
   <body> 
     
@@ -18,7 +19,7 @@
         <img src="graphics/pics/classicIcon.png" class="smallIcon clickable" alt="ClassiCorey Icon" onclick="window.location.href='index.html'">
       </div>
       <div class="col">
-        <p>Corey Crooks Philosophies</p>
+        <p>Corey Crooks Work</p>
       </div>
       <div class="row rightSideNav flexAlignCenter">
         <img src="graphics/svgs/HamburgerButton.svg" class="navHamburger dNone smallDFlex" id="hamburgerButton" onclick="navToggle()">
@@ -28,19 +29,31 @@
         <div class="col navLinkContainer smallDNone" onclick="window.location.href='photography.html'">
           <p class="navLinks">Photography</p>
         </div>
-        <div class="col navLinkContainer smallDNone muted"  onclick="window.location.href='philosophies.html'">
-          <p class="navLinks">Design Philosophies</p>
+        <div class="col navLinkContainer smallDNone"  onclick="window.location.href='philosophies.html'">
+          <p class="navLinks muted">Design Philosophies</p>
         </div>
       </div>
     </div>
-
     <!-- Small Screen Nav Bar -->
     <div class="col dFlex responsiveNavContainer" id="responsiveNavContainer">
       <div class="row responsiveNavItem clickable" onclick="window.location.href='workHistory.html'">
         <p>Work History</p>
       </div>
-      <div class="row responsiveNavItem clickable" onclick="window.location.href='photography.html'">
-        <p>My Photography</p>
+      <div class="row responsiveNavItem clickable">
+        <div class="col flexTriple"  onclick="window.location.href='photography.html'">
+          <p>My Photography</p>
+        </div>
+        <div class="col flexAlignEnd" onclick="arrowToggle()">
+          <img src="graphics/svgs/ArrowBigGap.png" class="arrowBigGap" id="navExpanderArrow">
+        </div>
+      </div>
+      <div class="subCategoryNavbar scale0 dNone" id="photographySubsection">
+        <div class="row responsiveNavItem clickable" onclick="window.location.href='animatephotography.html'">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Animate Photography</p>
+        </div>
+        <div class="row responsiveNavItem clickable" onclick="window.location.href='inanimatephotography.html'">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inanimate Photography</p>
+        </div>
       </div>
       <div class="row responsiveNavItem clickable" onclick="window.location.href='philosophies.html'">
         <p class="muted">My Design Philosophies</p>

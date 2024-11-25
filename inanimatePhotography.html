@@ -9,15 +9,17 @@
     <link rel="stylesheet" href="photographyGridPages.css">
     <link rel="stylesheet" href="utility.css">
     <script src="scripts/navToggle.js"></script>
+    <script src="scripts/arrowRotate.js"></script>
   </head>
   <body>
+
     <!-- NavBar -->
     <div class="row fullRow navContainer flexAlignCenter">
       <div class="col">
         <img src="graphics/pics/classicIcon.png" class="smallIcon clickable" alt="ClassiCorey Icon" onclick="window.location.href='index.html'">
       </div>
       <div class="col">
-        <p>Corey Crooks Photography</p>
+        <p>Corey Crooks Work</p>
       </div>
       <div class="row rightSideNav flexAlignCenter">
         <img src="graphics/svgs/HamburgerButton.svg" class="navHamburger dNone smallDFlex" id="hamburgerButton" onclick="navToggle()">
@@ -37,18 +39,32 @@
       <div class="row responsiveNavItem clickable" onclick="window.location.href='workHistory.html'">
         <p>Work History</p>
       </div>
-      <div class="row responsiveNavItem clickable" onclick="window.location.href='photography.html'">
-        <p>My Photography</p>
+      <div class="row responsiveNavItem clickable">
+        <div class="col flexTriple"  onclick="window.location.href='photography.html'">
+          <p>My Photography</p>
+        </div>
+        <div class="col flexAlignEnd" onclick="arrowToggle()">
+          <img src="graphics/svgs/ArrowBigGap.png" class="arrowBigGap" id="navExpanderArrow">
+        </div>
+      </div>
+      <div class="subCategoryNavbar scale0 dNone" id="photographySubsection">
+        <div class="row responsiveNavItem clickable" onclick="window.location.href='animatephotography.html'">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Animate Photography</p>
+        </div>
+        <div class="row responsiveNavItem clickable" onclick="window.location.href='inanimatephotography.html'">
+          <p class="muted">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inanimate Photography</p>
+        </div>
       </div>
       <div class="row responsiveNavItem clickable" onclick="window.location.href='philosophies.html'">
         <p>My Design Philosophies</p>
       </div>
     </div>
     <!-- End NavBar -->
+
     <section class="headerText">
         <h1 class="textCenter">Non&#45;live subjects</h1>
         <p class="textCenter smallDNone">Hover over images to expand.</p>
-        <p class="textCenter dNone smallDBlock">Tap or click images to expand edges.</p>
+        <p class="textCenter dNone smallDBlock">Tap or click images to expand corners.</p>
     </section>
     <div class="photographyGrid">
       <div class="pictureContainer"><img class="picture" loading="lazy" src="graphics/pics/photographyCollection/InanimateShots/AbstractGreen.jpg"></div>
