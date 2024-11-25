@@ -37,6 +37,10 @@
     flex: 3;
 }
 
+.flexDouble{
+    flex: 2;
+}
+
 .flexAlignCenter{
     align-items: center;
 }

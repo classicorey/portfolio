@@ -88,6 +88,10 @@
     animation-duration: 1ms;
 }
 
+.bioContainer{
+    padding: 0 1rem 0 1rem;
+}
+
 .questionIcon{
     width:200px;
     height: 200px;
@@ -108,11 +112,6 @@
     background-color: rgba(12, 5, 5, 0.95);
     color: #FEFDFD;
     position: relative;
-}
-
-.navigationThumbnailImg{
-    width: 720px;
-    height: 429px;
 }
 
 .workHistoryHeader{
@@ -177,10 +176,18 @@
     .navText{
         padding: 1rem 3rem 0 3rem;
     }
+    .navTextContainer{
+        max-width: 600px;
+        margin: auto;
+    }
 
     .navTitle{
         padding-bottom: 2rem;
         line-height: 5rem;
+    }
+
+    .navigationThumbnailImg{
+        object-fit: cover;
     }
     
 }
