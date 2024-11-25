@@ -179,7 +179,7 @@ p.multiParagraph{
 }
 .subCategoryNavbar{
     transition: transform 0.3s ease;
-    transform-origin: 25% 0%;
+    transform-origin: 0% 0%;
 }
 /* 
 Start Media Queries 

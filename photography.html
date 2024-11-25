@@ -48,7 +48,7 @@
           <img src="graphics/svgs/ArrowBigGap.png" class="arrowBigGap" id="navExpanderArrow">
         </div>
       </div>
-      <div class="subCategoryNavbar scale0 dNone" id="photographySubsection">
+      <div class="subCategoryNavbar scaleX0 dNone" id="photographySubsection">
         <div class="row responsiveNavItem clickable" onclick="window.location.href='animatephotography.html'">
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Animate Photography</p>
         </div>
@@ -61,25 +61,23 @@
       </div>
     </div>
     <!-- End NavBar -->
-
-    <section class="underConstructionAlert">
-      <div class="dFlex">
-        <div class="row fullWidth alertRow">
-          <div class="col flexAlignCenter flexJustifyCenter">
-            <img class="alertLogo" src="graphics/svgs/alertI.svg" alt="alertLogo">
-          </div>
-          <div class="col flexTriple  flexJustifyCenter">
-            <h1>Site Under Construction</h1>
-            <p>This particular page is under active construction.</p>
-          </div>
-        </div>
-      </div>
-    </section>
     
     <section class="pictures">
 
+      <section class="animateScenes clickable" onclick="window.location.href='animatePhotography.html'">
+        <h4 class="photographySectionHeading">Animate Photography:</h4>
+        <div class="photographyGrid">
+          <div class="picture1"><img class="showcasePhoto gridImage" id='animatePhoto1' src=''></div>
+          <div class="picture2"><img class="showcasePhoto gridImage" id='animatePhoto2' src=''></div>
+          <div class="picture3"><img class="showcasePhoto gridImage" id='animatePhoto3' src=''></div>
+          <div class="picture4"><img class="showcasePhoto gridImage" id='animatePhoto4' src=''></div>
+        </div>
+      </section>
+
+      <section class="spacer"></section>
+
       <section class="inanimateScenes clickable" onclick="window.location.href='inanimatePhotography.html'">
-        <h4>Inanimate Scene Photography:</h4>
+        <h4 class="photographySectionHeading">Inanimate Photography:</h4>
         <div class="photographyGrid">
           <div class="picture1"><img class="showcasePhoto gridImage" id="inanimatePhoto1" src=''></div>
           <div class="picture2"><img class="showcasePhoto gridImage" id="inanimatePhoto2" src=''></div>
@@ -88,16 +86,6 @@
         </div>
       </section>
       <section class="spacer"></section>
-
-      <section class="animateScenes clickable" onclick="window.location.href='animatePhotography.html'">
-        <h4>Live Scene Photography:</h4>
-        <div class="photographyGrid">
-          <div class="picture1"><img class="showcasePhoto gridImage" id='animatePhoto1' src=''></div>
-          <div class="picture2"><img class="showcasePhoto gridImage" id='animatePhoto2' src=''></div>
-          <div class="picture3"><img class="showcasePhoto gridImage" id='animatePhoto3' src=''></div>
-          <div class="picture4"><img class="showcasePhoto gridImage" id='animatePhoto4' src=''></div>
-        </div>
-      </section>
 
     </section>
   </body>

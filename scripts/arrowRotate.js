@@ -8,5 +8,5 @@ async function arrowToggle() {
     var photographySubsection = document.getElementById("photographySubsection");
     photographySubsection.classList.toggle("dBlock");
     await sleep(20);
-    photographySubsection.classList.toggle("scale1");
+    photographySubsection.classList.toggle("scaleX1");
   }

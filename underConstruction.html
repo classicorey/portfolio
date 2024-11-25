@@ -9,13 +9,26 @@
     <link rel="stylesheet" href="utility.css">
     <link rel="stylesheet" href="underConstruction.css">
   </head>
-  <body>
+  <body style="overflow:hidden;">
+    <section class="underConstructionAlert">
+      <div class="dFlex">
+        <div class="row fullWidth alertRow">
+          <div class="col flexAlignCenter flexJustifyCenter">
+            <img class="alertLogo" src="graphics/svgs/alertI.svg" alt="alertLogo">
+          </div>
+          <div class="col flexTriple  flexJustifyCenter">
+            <h1>Site Under Construction</h1>
+            <p>This particular page is under active construction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div class="dFlex fullScreen flexAlignCenter flexJustifyCenter clickable" onclick="window.location.href='index.html'">
       <div class="row fullWidth flexJustifyCenter flexAlignCenter">
           <img src="graphics/svgs/UNDERCONSTRUCTION.svg" class="constructionHeader">
           <div class="row fullWidth flexJustifyCenter flexAlignCenter">
-            <h1 class="mainAlertText">This page is under construction right now.</h1>
+            <h1 class="mainAlertText textCenter">This page is under construction right now.<br>Click here to return home.</h1>
           </div>
           <div class="row fullWidth flexJustifyCenter flexAlignCenter">
             <p class="supportingText">My pretty pictures will be here soon enough. Check back later to see if I've started implementing this page.</p>

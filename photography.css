@@ -71,6 +71,9 @@ body{
     object-fit: cover;
 }
 
+.photographySectionHeading{
+    padding: 0 0 1rem 0;
+}
 /*
     Start Media Queries
 */
