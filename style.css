@@ -128,17 +128,21 @@ p.multiParagraph{
 
 .responsiveNavContainer{
     background-color: #1F1F1F;
-    z-index: 10;
+    transform-origin: 0% 0%;
     color: white;
-    transform-origin: top;
-    transform: scaleY(0);
     transition: transform 0.3s ease;
+    transform: scaleY(0);
     position: absolute;
     width: 100%;
+    position: fixed;
+    top: 100px;
+    z-index: 10;
 }
 
 .nav-open {
+    transform-origin: top;
     transform: scale(1);
+    top: 100px;
   }
 
 .responsiveNavItem{
