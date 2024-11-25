@@ -99,6 +99,7 @@ p.multiParagraph{
   position: sticky;
   top: 0;
   z-index: 10;
+  user-select: none;
 }
 
 .navLinks{
@@ -137,6 +138,7 @@ p.multiParagraph{
     position: fixed;
     top: 100px;
     z-index: 10;
+    user-select: none;
 }
 
 .nav-open {
