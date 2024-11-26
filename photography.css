@@ -93,6 +93,7 @@ body{
         max-height: 200px;
     }
 }
+
 @media (prefers-reduced-motion){
     .inanimateScenes:hover:before{
         transition: 0ms;
