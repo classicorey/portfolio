@@ -204,6 +204,19 @@ Start Media Queries
     }
 }
 
+@media (prefers-reduced-motion){
+    .responsiveNavContainer{
+        transition: 0ms;
+    }
+    .arrowBigGap{
+        transition: 0ms;
+    }
+    .subCategoryNavbar{
+        transition: 0ms;
+    }
+
+}
+
 /* 
 Start debug rulings
 */

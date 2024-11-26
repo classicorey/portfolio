@@ -66,3 +66,12 @@ body{
 
     
 }
+
+@media (prefers-reduced-motion){
+    .picture:hover, .picture:focus, .picture:active{
+        transition: 0ms;
+    }
+    .pictureContainer:hover, .pictureContainer:focus, .pictureContainer:active{
+        transition: 0ms;
+    }
+}
