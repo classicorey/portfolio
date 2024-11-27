@@ -38,7 +38,7 @@ body{
 }
 
 .headerText{
-    background: linear-gradient(to right, rgba(0,0,0,.7), rgba(0,0,0,.3), rgba(0,0,0,0.1), rgba(0,0,0,0));
+    background: linear-gradient(to right, var(--clrBannerLight), var(--clrBannerMid), var(--clrBannerDark), var(--clrBannerEnd));
     padding: 1rem 1rem 1rem 2rem;
     color: var(--clrPLightText);
     text-shadow:

@@ -37,8 +37,23 @@ footer, header, hgroup, menu, nav, section {
     --clrPLightText: #f2ecec;
     --clrPDarkBackground: #292626;
     --clrSDarkBackground: #373131;
+    --clrPNightBackground: #1F1F1F;
+    --clrSNightBackground: #161515;
     --clrPLightBackground: #e5e3e3;
     --clrPAlertText: #a60e0e;
+    --clrPAlertBackground: #892020;
+    --clrSAlertBackground: #340b0b;
+    --clrPMutedText: #b4b4b4;
+
+    --clrLightTransparent: rgba(255, 255, 255, 0.9);
+    --clrDarkTransparent: rgba(0, 0, 0, 0.5);
+
+    --clrCodeBackground: #353333;
+
+    --clrBannerLight: rgba(0,0,0,.7);
+    --clrBannerMid: rgba(0,0,0,.3);
+    --clrBannerDark: rgba(0,0,0,0.1);
+    --clrBannerEnd: rgba(0,0,0,0);
 }
 
 .lightText{
@@ -117,8 +132,8 @@ p.multiParagraph{
 }
 
 .navContainer{
-  background-image: linear-gradient(150deg, #892020, #340b0b);
-  color: white;
+  background-image: linear-gradient(150deg, var(--clrPAlertBackground), var(--clrSAlertBackground));
+  color: var(--clrPLightText);
   height: 100px;
   padding-left: 2rem;
   position: sticky;
@@ -142,8 +157,8 @@ p.multiParagraph{
 }
 
 .navLinkContainer:hover, .navLinkContainer:focus, .navLinkContainer:active{
-  background-color: rgb(47, 8, 8);
-  color: rgb(169, 169, 169);
+  background-color: var(--clrSAlertBackground);
+  color: var(--clrPMutedText);
 }
 
 .navHamburger{
@@ -153,9 +168,9 @@ p.multiParagraph{
 }
 
 .responsiveNavContainer{
-    background-color: #1F1F1F;
+    background-color: var(--clrPNightBackground);
     transform-origin: 0% 0%;
-    color: white;
+    color: var(--clrPLightText);
     transition: transform 0.3s ease;
     transform: scaleY(0);
     position: absolute;
@@ -177,16 +192,16 @@ p.multiParagraph{
 }
 
 .responsiveNavItem:hover, .responsiveNavItem:focus, .responsiveNavItem:active{
-    background-color: #B12A2A;
+    background-color: var(--clrPAlertBackground);
     padding-left: 2rem;
 }
 
 .underConstructionAlert{
-    color: white;
+    color: var(--clrPLightText);
 }
 .alertRow{
     padding: 1rem 0 1rem 0;
-    background: linear-gradient(to right, #A90A0A, #A90A0A, #470404);
+    background: linear-gradient(to right, var(--clrPAlertBackground), var(--clrSAlertBackground));
 }
 .alertLogo{
     width: 75px;
@@ -201,9 +216,6 @@ p.multiParagraph{
     transform: rotate(180deg);
 }
 
-.muted{
-    color: #b4b4b4;
-}
 .subCategoryNavbar{
     transition: transform 0.3s ease;
     transform-origin: 0% 0%;

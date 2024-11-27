@@ -112,6 +112,10 @@
     transform: scaleX(1);
 }
 
+.muted{
+    color: var(--clrPMutedText);
+}
+
 .philosophy::before{
     content:url('graphics/svgs/Quotations.svg');
     position: absolute;

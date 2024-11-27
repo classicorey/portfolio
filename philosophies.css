@@ -1,6 +1,3 @@
-:root{
-    --clrCodeBackground: #353333;
-}
 
 body{
     background-color: var(--clrPDarkBackground);

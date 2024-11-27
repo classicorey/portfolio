@@ -17,7 +17,7 @@
 }
 
 .greetingDisplay{
-    background-color:rgba(0,0,0,0.5);
+    background-color:var(--clrDarkTransparent);
     color: var(--clrPLightText);
 }
 .homeH2{
@@ -61,7 +61,7 @@
 
 .logicDiv{
     max-width: 1100px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--clrLightTransparent);
     padding: 3rem 0 3rem 0;
     margin: 0 5svw 0 5svw;
 }
@@ -113,7 +113,7 @@
     background-image: url("graphics/svgs/shapesBackground.svg");
     background-size: 25%;
     background-repeat: repeat;
-    background-color: rgba(12, 5, 5, 0.95);
+    background-color: var(--clrSNightBackground);
     color: #FEFDFD;
     position: relative;
 }
@@ -147,7 +147,7 @@
 }
 
 .navigationRow{
-    background-color: rgba(12, 5, 5, 0.8);
+    background-color: var(--clrDarkTransparent);
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
