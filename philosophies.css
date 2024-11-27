@@ -1,6 +1,10 @@
+:root{
+    --clrCodeBackground: #353333;
+}
+
 body{
-    background-color: #272323;
-    color: white;
+    background-color: var(--clrPDarkBackground);
+    color: var(--clrPLightText);
     padding: 0 0 5rem 0;
 }
 
@@ -16,12 +20,12 @@ body{
 
 .code{
     font-family: "Courier New";
-    background-color: #353333;
-    color: #FBFCFB;
+    background-color: var(--clrCodeBackground);
+    color: var(--clrPLightText);
 }
 .code::before, .code::after{
     content: "\"";
-    background-color: #272323;
+    background-color: var(--clrPDarkBackground);
 }
 .philosophy{
     padding: 0 0 4rem 0;

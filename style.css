@@ -32,10 +32,35 @@ footer, header, hgroup, menu, nav, section {
 }
 /* End Resets */
 
+:root{
+    --clrPDarkText: #121010;
+    --clrPLightText: #f2ecec;
+    --clrPDarkBackground: #292626;
+    --clrSDarkBackground: #373131;
+    --clrPLightBackground: #e5e3e3;
+    --clrPAlertText: #a60e0e;
+}
+
+.lightText{
+    color: var(--clrPLightText);
+}
+
+.lightBackground{
+    color: var(--clrPLightBackground);
+}
+
+.darkText{
+    color: var(--clrPDarkText);
+}
+
+.darkBackground{
+    color: var(--clrPDarkBackground);
+}
+
 body {
 	line-height: 1;
     font-family: "Helvetica Neue", "Helvetica", "Arial";
-    color: #170001;
+    color: var(--clrPDarkBackground);
     font-size: 3rem;
 }
 strong{

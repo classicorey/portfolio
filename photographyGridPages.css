@@ -1,6 +1,6 @@
 body{
-    background-color: #272323;
-    color: white;
+    background-color: var(--clrPDarkBackground);
+    color: var(--clrPLightText)
 }
 .headerText{
     padding: 5rem 0 5rem 0;

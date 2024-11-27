@@ -1,14 +1,17 @@
 
 :root{
     --clrBishops: #F04E25;
+    --clrBishopsAccent: #3d1500;
     --clrVeo: #20A29F;
+    --clrVeoAccent: #062121;
     --clrPGIP: #C08E2B;
+    --clrPGIPAccent: #341f00;
 }
 body{
-    background-color: #272323;
+    background-color: var(--clrPDarkBackground);
 }
 .workHeader{
-    color: #e2e2e2;
+    color: var(--clrPLightText);
     padding: 4rem 20svw 4rem 20svw;
     position: relative;
     overflow:hidden;
@@ -20,11 +23,6 @@ body{
     top: 0px;
     left:0;
     z-index: -1;
-}
-
-
-.workSubHeader{
-    color: #e2e2e2;
 }
 
 .workHeaderContainer{
@@ -42,7 +40,7 @@ body{
 .headerText{
     background: linear-gradient(to right, rgba(0,0,0,.7), rgba(0,0,0,.3), rgba(0,0,0,0.1), rgba(0,0,0,0));
     padding: 1rem 1rem 1rem 2rem;
-    color: white;
+    color: var(--clrPLightText);
     text-shadow:
      -1px -1px 10 #9B9B9B,  
       1px -1px 0 #9B9B9B,
@@ -99,15 +97,15 @@ body{
 }
 .veoPill{
     background-image: radial-gradient(farthest-corner at 100% 100%, var(--clrVeo), black);
-    outline: 5px solid #062121;
+    outline: 5px solid var(--clrVeoAccent);
 }
 .bishopPill{
     background-image: radial-gradient(farthest-corner at 100% 100%, var(--clrBishops), black);
-    outline: 5px solid #3d1500;
+    outline: 5px solid var(--clrBishopsAccent);
 }
 .pgipPill{
     background-image: radial-gradient(farthest-corner at 100% 100%, var(--clrPGIP), black);
-    outline: 5px solid #341f00;
+    outline: 5px solid var(--clrPGIPAccent);
 }
 .bishops{
     color: var(--clrBishops);
@@ -131,12 +129,12 @@ body{
     height: 120px;
 }
 .projectsHistory{
-    color:#e2e2e2;
-    background-color: #373131;
+    color: var(--clrPLightText);
+    background-color: var(--clrSDarkBackground);
 }
 .disclaimerFooter{
-    background-color: #373131;
-    color: #9b9191;
+    background-color: var(--clrSDarkBackground);
+    color: var(--clrPLightText);
     padding: 2rem 5rem 2rem 5rem;
 }
 
