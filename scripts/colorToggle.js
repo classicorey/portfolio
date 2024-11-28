@@ -15,14 +15,37 @@ function colorToggle(){
     setTheme();
     
 }
+function toggleNavbarText(){
+
+    var navColorModeToggleText = document.getElementById("navColorModeToggleText");
+    
+    if (localStorage.getItem('theme') == 'dark')
+        navColorModeToggleText.innerHTML = "Enable Light Mode";
+
+    else
+        navColorModeToggleText.innerHTML = "Switch back to Dark Mode";
+}
+function toggleHomeBannerText(){
+    var lightModeTogglerH1 = document.getElementById("inverterBannerH1");
+    var lightModeTogglerP = document.getElementById("inverterBannerP");
+
+    if (localStorage.getItem('theme') == 'dark'){
+        lightModeTogglerH1.innerHTML = "Need some new colors?";
+        lightModeTogglerP.innerHTML = "Click here to invert this site's color palette.";
+    }
+
+    else{
+        lightModeTogglerH1.innerHTML = "This site was made with dark mode.";
+        lightModeTogglerP.innerHTML = "Click here to get the default look.";
+    }
+
+}
 function setTheme(){
     
 
     //If there is a theme in local storage,
     if (localStorage.getItem('theme')){
 
-        var lightModeTogglerH1 = document.getElementById("inverterBannerH1");
-        var lightModeTogglerP = document.getElementById("inverterBannerP");
 
         //If the theme in local storage is Dark Mode,
         if (localStorage.getItem('theme') == 'dark'){
@@ -34,6 +57,7 @@ function setTheme(){
             root.style.setProperty('--clrSNightBackground', '#161515');
             root.style.setProperty('--clrPLightBackground', '#e5e3e3');
             root.style.setProperty('--clrPAlertText', '#a60e0e');
+            root.style.setProperty('--clrPAlertLightText', '#fa7070');
             root.style.setProperty('--clrPAlertBackground', '#892020');
             root.style.setProperty('--clrSAlertBackground', '#340b0b');
             root.style.setProperty('--clrPMutedText', '#b4b4b4');
@@ -58,8 +82,6 @@ function setTheme(){
 
             root.style.setProperty('--brightTextContraster', 'rgba(255, 255, 255, 0)');
 
-            lightModeTogglerH1.innerHTML = "Need some new colors?";
-            lightModeTogglerP.innerHTML = "Click here to invert this site's color palette.";
         }
 
         //If the theme in local storage is not Dark Mode,
@@ -72,6 +94,7 @@ function setTheme(){
             root.style.setProperty('--clrSNightBackground', '#EDECEC'); // Darker secondary night background
             root.style.setProperty('--clrPLightBackground', '#121010'); // Dark background for light mode
             root.style.setProperty('--clrPAlertText', '#a60e0e'); // Keeping alert text the same
+            root.style.setProperty('--clrPAlertLightText', '#a60e0e');
             root.style.setProperty('--clrPAlertBackground', '#9C2E2E'); // Darker alert background
             root.style.setProperty('--clrSAlertBackground', '#EFBFBF'); // Secondary alert background, slightly lighter red
             root.style.setProperty('--clrPMutedText', '#6c757d'); // Muted text for light mode (stays mid-tone gray)
@@ -97,9 +120,6 @@ function setTheme(){
             root.style.setProperty('--mainTextBackgroundLighter', 'linear-gradient(95deg, white, #CACFCF, rgba(0,0,0,0), rgba(0,0,0,0))');
             
             root.style.setProperty('--brightTextContraster', 'rgba(255, 255, 255, 0.7)');
-
-            lightModeTogglerH1.innerHTML = "This site was made with dark mode.";
-            lightModeTogglerP.innerHTML = "Click here to get the default look.";
         }
     }
 

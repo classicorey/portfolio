@@ -41,6 +41,7 @@ footer, header, hgroup, menu, nav, section {
     --clrSNightBackground: #161515;
     --clrPLightBackground: #e5e3e3;
     --clrPAlertText: #a60e0e;
+    --clrPAlertLightText: #fa7070;
     --clrPAlertBackground: #892020;
     --clrSAlertBackground: #340b0b;
     --clrPMutedText: #b4b4b4;
