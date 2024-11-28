@@ -97,6 +97,9 @@ function setTheme(){
             root.style.setProperty('--clrPGIP', '#C08E2B');
             root.style.setProperty('--clrPGIPAccent', '#341f00');
 
+            root.style.setProperty('--mainTextBackground', 'linear-gradient(95deg, #272323, #272323, rgba(0,0,0,0), rgba(0,0,0,0)');
+            root.style.setProperty('--mainTextBackgroundLighter', 'linear-gradient(95deg, #353030, #353030, rgba(0,0,0,0), rgba(0,0,0,0)');
+
             root.style.setProperty('--brightTextContraster', 'rgba(255, 255, 255, 0)');
             root.style.setProperty('--clrLightTextLightModeHelper', 'rgba(0, 0, 0, 0)');
 
