@@ -4,6 +4,8 @@ const root = document.documentElement;
 // On page load, check localStorage and apply the stored theme
 window.addEventListener('DOMContentLoaded', (event) => {
     setTheme();
+    toggleNavbarText();
+    toggleNavbarText('largeScreen');
 });
 
 function colorToggle(){
