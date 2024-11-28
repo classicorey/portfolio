@@ -98,6 +98,7 @@ function setTheme(){
             root.style.setProperty('--clrPGIPAccent', '#341f00');
 
             root.style.setProperty('--brightTextContraster', 'rgba(255, 255, 255, 0)');
+            root.style.setProperty('--clrLightTextLightModeHelper', 'rgba(0, 0, 0, 0)');
 
         }
 
@@ -137,6 +138,7 @@ function setTheme(){
             root.style.setProperty('--mainTextBackgroundLighter', 'linear-gradient(95deg, white, #CACFCF, rgba(0,0,0,0), rgba(0,0,0,0))');
             
             root.style.setProperty('--brightTextContraster', 'rgba(255, 255, 255, 0.7)');
+            root.style.setProperty('--clrLightTextLightModeHelper', 'rgba(0, 0, 0, 0.7)');
         }
     }
 
