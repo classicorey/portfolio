@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="utility.css">
     <script src="scripts/greetingHandler.js"></script>
+    <script src="scripts/colorToggle.js"></script>
   </head>
 
   <body onload="newGreeting(homeGreeting)">
@@ -26,7 +27,21 @@
       </div>
     </section>      
 
-    <section class="flowerGreeting darkText">
+    <section class="underConstructionAlert clickable" onclick="colorToggle()">
+      <div class="dFlex">
+        <div class="row fullWidth alertRow">
+          <div class="col flexAlignCenter flexJustifyCenter">
+            <img class="alertLogo" src="graphics/svgs/alertI.svg" alt="alertLogo">
+          </div>
+          <div class="col flexTriple  flexJustifyCenter">
+            <h1 id="inverterBannerH1">Need some new colors?</h1>
+            <p id="inverterBannerP">Click here to invert this site's color palette.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flowerGreeting">
       <div class="dFlex flowerContainer">
         <div class="row fullWidth">
           <div class="col smallDNone">
@@ -50,8 +65,17 @@
       <img class="logic1" src="graphics/pics/LogicGates1.png" alt="More logic gates.">  
       <div class="logicDiv">
         <div class="rowCollapsable">
-          <div class="col flexJustifyCenter centerOnSmall">
-            <img class="questionIcon" src="graphics/svgs/Question Mark.svg">
+          <div class="col flexJustifyCenter flexAlignCenter centerOnSmall">
+            <svg class="questionMarkDot" width="50%" height="50%" viewBox="0 0 364 614" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+              <g transform="matrix(1,0,0,1,-688,-77)">
+                  <g id="Question-Mark" serif:id="Question Mark">
+                      <g transform="matrix(3.84956,0,0,3.84956,-2439.31,-1665.37)">
+                          <circle cx="863.376" cy="594.758" r="17.14"/>
+                      </g>
+                      <path class="questionMarkCurve" d="M760.079,280.315C732.169,242.697 770.009,161.34 832.888,145.011C916.252,123.362 986.578,180.56 988.82,252.404C990.801,315.87 936.034,350.393 878.697,408.034C834.382,452.583 865.045,464.764 865.045,509.663"/>
+                  </g>
+              </g>
+            </svg>
           </div>
           <div class="col flexTriple centerOnSmall bioContainer">
             <h4><span class="questionHeader">Who am I?</span></h4>

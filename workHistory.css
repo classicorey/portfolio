@@ -1,12 +1,4 @@
 
-:root{
-    --clrBishops: #F04E25;
-    --clrBishopsAccent: #3d1500;
-    --clrVeo: #20A29F;
-    --clrVeoAccent: #062121;
-    --clrPGIP: #C08E2B;
-    --clrPGIPAccent: #341f00;
-}
 body{
     background-color: var(--clrPDarkBackground);
 }
@@ -96,15 +88,15 @@ body{
     border-radius: 15px;
 }
 .veoPill{
-    background-image: radial-gradient(farthest-corner at 100% 100%, var(--clrVeo), black);
+    background-image: radial-gradient(farthest-corner at 100% 100%, var(--clrVeo), var(--clrPDarkText));
     outline: 5px solid var(--clrVeoAccent);
 }
 .bishopPill{
-    background-image: radial-gradient(farthest-corner at 100% 100%, var(--clrBishops), black);
+    background-image: radial-gradient(farthest-corner at 100% 100%, var(--clrBishops), var(--clrPDarkText));
     outline: 5px solid var(--clrBishopsAccent);
 }
 .pgipPill{
-    background-image: radial-gradient(farthest-corner at 100% 100%, var(--clrPGIP), black);
+    background-image: radial-gradient(farthest-corner at 100% 100%, var(--clrPGIP), var(--clrPDarkText));
     outline: 5px solid var(--clrPGIPAccent);
 }
 .bishops{

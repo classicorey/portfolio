@@ -54,6 +54,18 @@ footer, header, hgroup, menu, nav, section {
     --clrBannerMid: rgba(0,0,0,.3);
     --clrBannerDark: rgba(0,0,0,0.1);
     --clrBannerEnd: rgba(0,0,0,0);
+
+    --clrBishops: #F04E25;
+    --clrBishopsAccent: #3d1500;
+    --clrVeo: #20A29F;
+    --clrVeoAccent: #062121;
+    --clrPGIP: #C08E2B;
+    --clrPGIPAccent: #341f00;
+
+    --mainTextBackground: linear-gradient(95deg, #272323, #272323, rgba(0,0,0,0), rgba(0,0,0,0));
+    --mainTextBackgroundLighter: linear-gradient(95deg, #353030, #353030, rgba(0,0,0,0), rgba(0,0,0,0));
+
+    --brightTextContraster:rgba(255, 255, 255, 0.7);
 }
 
 .lightText{
