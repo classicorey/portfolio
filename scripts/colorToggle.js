@@ -15,15 +15,26 @@ function colorToggle(){
     setTheme();
     
 }
-function toggleNavbarText(){
+function toggleNavbarText(screenSize){
+    var navColorModeToggleTextResponsive = document.getElementById("navColorModeToggleText");
+    var navColorModeToggleTextLargeScreens = document.getElementById("navLargeScreensColorModeText");
+    if (screenSize == 'largeScreen'){
 
-    var navColorModeToggleText = document.getElementById("navColorModeToggleText");
-    
-    if (localStorage.getItem('theme') == 'dark')
-        navColorModeToggleText.innerHTML = "Enable Light Mode";
+        if (localStorage.getItem('theme') == 'dark')
+            navColorModeToggleTextLargeScreens.innerHTML = "Light Mode";
 
-    else
-        navColorModeToggleText.innerHTML = "Switch back to Dark Mode";
+        else
+        navColorModeToggleTextLargeScreens.innerHTML = "Dark Mode";
+    }
+    else{
+        var navColorModeToggleTextResponsive = document.getElementById("navColorModeToggleText");
+
+        if (localStorage.getItem('theme') == 'dark')
+            navColorModeToggleTextResponsive.innerHTML = "Enable Light Mode";
+
+        else
+            navColorModeToggleTextResponsive.innerHTML = "Switch back to Dark Mode";
+    }
 }
 function toggleHomeBannerText(){
     var lightModeTogglerH1 = document.getElementById("inverterBannerH1");
