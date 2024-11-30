@@ -90,6 +90,18 @@
     padding-left: 20%;
 }
 
+.paddingT2r{
+    padding-top: 2rem;
+}
+
+.paddingB2r{
+    padding-bottom: 2rem;
+}
+
+.marginT2r{
+    margin-top: 2rem;
+}
+
 .strongest{
     font-weight: 900;
 }
