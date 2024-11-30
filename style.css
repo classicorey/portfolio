@@ -124,6 +124,7 @@ h2, h3, h5, h6{
 img{
     display: block;
     max-width: 100%;
+    box-sizing: border-box;
 }
 p{
     font-size: 1.3rem;

@@ -94,6 +94,14 @@
     padding-top: 2rem;
 }
 
+.paddingR3r{
+    padding-right: 3rem;
+}
+
+.paddingL3r{
+    padding-left: 3rem;
+}
+
 .paddingB2r{
     padding-bottom: 2rem;
 }
@@ -217,5 +225,9 @@
 
     .smallSpacer{
         padding: 3rem 0 3rem 0;
+    }
+
+    .paddingL20{
+        padding: 0 0 0 0;
     }
 }
