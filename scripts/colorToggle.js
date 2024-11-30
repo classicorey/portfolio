@@ -100,7 +100,7 @@ function setTheme(){
             root.style.setProperty('--mainTextBackground', 'linear-gradient(95deg, #272323, #272323, rgba(0,0,0,0), rgba(0,0,0,0)');
             root.style.setProperty('--mainTextBackgroundLighter', 'linear-gradient(95deg, #353030, #353030, rgba(0,0,0,0), rgba(0,0,0,0)');
 
-            root.style.setProperty('--brightTextContraster', 'rgba(255, 255, 255, 0)');
+            root.style.setProperty('--clrBrightTextContraster', 'rgba(255, 255, 255, 0)');
             root.style.setProperty('--clrLightTextLightModeHelper', 'rgba(0, 0, 0, 0)');
 
         }
@@ -140,7 +140,7 @@ function setTheme(){
             root.style.setProperty('--mainTextBackground', 'linear-gradient(95deg, white, #D8DCDC, rgba(0,0,0,0), rgba(0,0,0,0))');
             root.style.setProperty('--mainTextBackgroundLighter', 'linear-gradient(95deg, white, #CACFCF, rgba(0,0,0,0), rgba(0,0,0,0))');
             
-            root.style.setProperty('--brightTextContraster', 'rgba(255, 255, 255, 0.7)');
+            root.style.setProperty('--clrBrightTextContraster', 'rgba(255, 255, 255, 0.8)');
             root.style.setProperty('--clrLightTextLightModeHelper', 'rgba(0, 0, 0, 0.7)');
         }
     }
