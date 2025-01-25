@@ -135,6 +135,9 @@ p.multiParagraph{
     padding-bottom: 1rem;
     text-align: start;
 }
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
 
 .smallIcon{
     width:100px;

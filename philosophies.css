@@ -5,25 +5,45 @@ body{
     padding: 0 0 5rem 0;
 }
 
-.contentContainer{
-    margin: 0 auto 0 auto;
-    width: 800px;
-    max-width: 90svw;
+.contactGrid{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    max-width: 50%;
+    gap: 4rem;
+}
+.icon{
+    width: 75px;
+}
+.banner{
+    position: relative;
+}
+.bannerText{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    background: var(--clrDarkTransparent);
+    padding: 2rem 2rem 2rem 2rem;
 }
 
-.insightTitle{
-    padding: 0 0 0 0;
+a.gitHubLink{
+    color: #40962C;
 }
 
-.code{
-    font-family: "Courier New";
-    background-color: var(--clrCodeBackground);
-    color: var(--clrPLightText);
+a.linkedInLink{
+    color: #0A66C2;
 }
-.code::before, .code::after{
-    content: "\"";
-    background-color: var(--clrPDarkBackground);
+
+a.instagramLink{
+    color: #C13584;
 }
-.philosophy{
-    padding: 0 0 4rem 0;
+
+/*
+    Start Media Queries
+*/
+@media (max-width: 1545px){
+
+    .contactGrid{
+        max-width: 90%;
+    }
+    
 }
