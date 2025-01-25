@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Corey Crooks | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="utility.css">
+    <script src="scripts/greetingHandler.js"></script>
+    <script src="scripts/colorToggle.js"></script>
+  </head>
+
+  <body onload="newGreeting(homeGreeting)">
+
+    <section class="homeHeader">
+      <div class="dFlex">
+        <div class="rowCollapsable fullWidth">
+          <div class="col flexAlignCenter flexJustifyCenter">
+            <img class="smallIcon clickable" src="graphics/pics/classicIcon.png" alt="ClassiCorey Icon" onclick="window.location.href='home.html'">
+          </div>
+          <div class="col flexTriple flexJustifyCenter smallDNone">
+            <h3 class="textCenter" id="homeGreeting"></h3>
+          </div>
+        </div>
+      </div>
+    </section>      
+
+    <section class="underConstructionAlert clickable" onclick="colorToggle(); toggleHomeBannerText()">
+      <div class="dFlex">
+        <div class="row fullWidth alertRow">
+          <div class="col flexAlignCenter flexJustifyCenter">
+            <img class="alertLogo" src="graphics/svgs/alertI.svg" alt="alertLogo">
+          </div>
+          <div class="col flexTriple  flexJustifyCenter">
+            <h1 id="inverterBannerH1">Need some new colors?</h1>
+            <p id="inverterBannerP">Click here to invert this site's color palette.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flowerGreeting">
+      <div class="dFlex flowerContainer">
+        <div class="row fullWidth">
+          <div class="col smallDNone">
+          </div>
+          <div class="col smallDNone">
+          </div>
+          <div class="col flexAlignCenter flexJustifyCenter greetingDisplay">
+            <img class="selfie" src="graphics/pics/selfie.png" alt="A picture of me.">
+            <h1 class="name">Corey Crooks</h1>
+            <div>
+              <h2 class="homeH2">Front&#45;End Software Programming</h2>
+                <h2 class="homeH2">&#47;&#47;Portfolio Website</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dFlex flexJustifyCenter logicSection noOverflow">
+      <img class="logic0" src="graphics/pics/LogicGates.png" alt="Logic gates.">
+      <img class="logic1" src="graphics/pics/LogicGates1.png" alt="More logic gates.">  
+      <div class="logicDiv">
+        <div class="rowCollapsable">
+          <div class="col flexJustifyCenter flexAlignCenter centerOnSmall">
+            <svg class="questionMarkDot" width="50%" height="50%" viewBox="0 0 364 614" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+              <g transform="matrix(1,0,0,1,-688,-77)">
+                  <g id="Question-Mark" serif:id="Question Mark">
+                      <g transform="matrix(3.84956,0,0,3.84956,-2439.31,-1665.37)">
+                          <circle cx="863.376" cy="594.758" r="17.14"/>
+                      </g>
+                      <path class="questionMarkCurve" d="M760.079,280.315C732.169,242.697 770.009,161.34 832.888,145.011C916.252,123.362 986.578,180.56 988.82,252.404C990.801,315.87 936.034,350.393 878.697,408.034C834.382,452.583 865.045,464.764 865.045,509.663"/>
+                  </g>
+              </g>
+            </svg>
+          </div>
+          <div class="col flexTriple centerOnSmall bioContainer">
+            <h4><span class="questionHeader">Who am I?</span></h4>
+            <h5>I am <span class="bioName centerOnSmall">Corey Crooks</span>&#59; a front&#45;end programmer.</h5>
+            <br>
+            <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I started my enthusiasm back in middle school when I got a hold of HTML. The idea of writing at a keyboard, and making fantastic images appear on screen was simply fascinating. I started with an early local site with no hosting whatsoever written purely in HTML.</p>
+            <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My intrigue has grown since then along with the innovations of the language. I have bolstered my own skillsets through both self&ndash;taught work, and peer&ndash;to&ndash;peer work through volunteer and academic studies. I am thankful for the skills I have
+                                      developed with my Bachelor's degree in software programming, and enthusiastic towards the further knowledge I will gather in my professional work going forward.
+            </p>
+            <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today, I use my free time engaging in new technological systems to further expand my knowledge. The ever&ndash;changing climate of website design draws me in, but I am no stranger to back&ndash;end work in C&#35;, Python, or even SQL! 
+              This site serves as both a benchmark for my current front&#45;end progress, and also a portfolio for what I've done in the past! I have pages for my work experience, photography hobby, and design philosophies.</p>
+          </div>
+        </div>
+      </div>  
+    </section>
+
+    <section class="pageSelection noOverflow bright">
+      <h2 class="textCenter marginT2r lightModeTextHelper strongest paddingT2r paddingB2r"><span class="alertText">Click</span> a section <span class="alertText">below</span> to find out more</h1>
+      <div class="spacer">
+        <div class="rowCollapsable fullWidth clickable navigationRow centerOnSmall" onclick="window.location.href='workHistory.html'">
+          <div class="col">
+            <img class="smallDNone" src="graphics/pics/WorkHistoryCode.png" alt="A picture of my watch.">
+          </div>
+          <div class="col flexTriple pageSelectTextPadding centerOnSmall">
+            <div class="row">
+               <div class="col">
+                <h3 class="workHistoryHeader navTitle">See my professional history!</h3>
+                <img class="dNone smallDBlock navigationThumbnailImg" src="graphics/pics/WorkHistoryCode.png" alt="A picture of my watch.">
+              </div>
+            </div>
+            <div class="row pageSelectPtext paddingR20 smallReset centerOnSmall">
+                <div class="col navTextContainer">
+                  <p class="navText">There are a number of things that you might be interested in over on my professional side! Over on this page you can see everything; personal projects, volunteer experience, you name it! 
+                    I have had a lot of experience solidifying my career choice as a programmer, and there's plenty of content to showcase that! Allow me to show you what I've been up to from beta testing software to strategizing live&#45;service markets.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer">
+        <div class="rowCollapsable fullWidth clickable navigationRow centerOnSmall" onclick="window.location.href='photography.html'">
+          
+          <div class="col flexDouble pageSelectTextPadding centerOnSmall textRight paddingR3r paddingL20">
+            <div class="row">
+              <div class="col">
+                <h3 class="philosophyHeader navTitle">See my photography!</h3>
+                <img class="dNone smallDBlock navigationThumbnailImg" src="graphics/pics/PhotographyCharlie.jpg" alt="A picture of a dog.">
+              </div>
+            </div>
+            <div class="row pageSelectPtext smallReset centerOnSmall">
+                <div class="col navTextContainer">
+                  <p class="navText">Come and see some of my photography! Although it's all just a hobby right now, I've put some practice into learning shot composition and camera best&#45;practices. None of these shots have been taken of confidential subjects, and all people in my pictures have given express consent to be hosted on this website.
+                    I host these images for public viewing because I believe it gives prospective employers a great view into what elements I think are important in how I develop presentations.</p>
+                </div>
+            </div>
+          </div>
+          <div class="col">
+            <img class="smallDNone" src="graphics/pics/PhotographyCharlie.jpg" alt="A picture of a dog.">
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer">
+      <div class="rowCollapsable fullWidth clickable navigationRow centerOnSmall" onclick="window.location.href='philosophies.html'">
+        <div class="col">
+          <img class="smallDNone" src="graphics/pics/Philosophies.jpg" alt="A picture of a stuffed animal that serves as my rubber duck.">
+        </div>
+        <div class="col flexTriple pageSelectTextPadding centerOnSmall">
+          <div class="row">
+             <div class="col">
+              <h3 class="philosophyHeader navTitle">See my decision making!</h3>
+              <img class="dNone smallDBlock navigationThumbnailImg" src="graphics/pics/Philosophies.jpg" alt="A picture of a stuffed animal that serves as my rubber duck.">
+            </div>
+          </div>
+          <div class="row pageSelectPtext paddingR20 smallReset centerOnSmall">
+              <div class="col navTextContainer">
+              <p class="navText">Believe it or not, I put quite a bit of thought into what I put down and why I need it. Over on this page, you can learn a little bit about my decision-making process. Here, I have a QnA of sorts that describes my take on programming practices and how I utilize them in my projects.
+                  Want to know why I would use utility classes more depending on the project? Curious as to my thoughts on visually dynamic elements in client&#45;side presentations? It's all right here.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="smallSpacer"></div>
+    </section>
+
+  </body>
+</html>

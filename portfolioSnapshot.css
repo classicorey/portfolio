@@ -1,0 +1,225 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-image: radial-gradient(farthest-corner at 100% 100%, #252323 0%, #410303 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+p{
+    color: #DCC2C2;
+    font-size: 1.1rem;
+}
+
+a, a:visited{
+    color: #C46565;
+}
+span.link{
+    color: #C46565;
+    text-decoration: underline;
+}
+span.importantText{
+    color: #f2b04d;
+}
+.subText{
+    color: #DCC2C2;
+}
+
+.workLogo{
+    width: 75%;
+}
+.oneByTwoGrid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    'col1 col2';
+}
+.navLogo{
+    opacity: .4;
+    width: 50px;
+}
+.navLogo:hover{
+    opacity: .7;
+    scale: 1.1;
+    transition: .3s ease-in-out;
+}
+.transparent{
+    opacity: 0.3;
+    transition: .3s ease-in-out;
+}
+.col1{
+    grid-area: col1;
+    align-items: center;
+}
+.col2{
+    grid-area: col2;
+}
+
+.project{
+    user-select: none;
+}
+
+.project:hover{
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.thumbnail{
+    display: flex;
+    justify-content: end; 
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.miniWorkGrid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+    'Year WorkSummary';
+}
+.projectThumbnail{
+    aspect-ratio: 16/11;
+    border-radius: 10%;
+    outline: 2px solid #781515;
+}
+
+.linkText{
+    text-align: end;
+}
+
+.Year{
+    grid-area: Year;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.WorkSummary{
+    grid-area: WorkSummary;
+}
+.workTitle{
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #F3F0F0;
+}
+
+.newHeader{
+    margin: 4rem 0 2rem 0;
+    border-radius: 10px;
+    font-size: 2rem;
+    background-color: #261212;
+}
+
+.headerGrid{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas:
+    'Hero Content';
+    max-width: 1500px;
+    width: 80%;
+    margin: auto auto;
+    gap: 15rem;
+}
+
+.Hero{
+    grid-area: Hero;
+    color: #F3F0F0;
+}
+.Content{
+    grid-area: Content;
+    color: #F3F0F0;
+
+}
+
+.heroGrid{
+    position: sticky;
+    top: 4rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr minmax(1px, 100000px) 1fr;
+    grid-template-areas:
+    'Name'
+    'Title'
+    'Description'
+    'Nav'
+    'Icons';
+    height: 80vh;
+    gap: 1rem;
+}
+
+.Name{
+    grid-area: Name;
+    font-weight: 800;
+    font-size: 3rem;
+}
+.Title{
+    grid-area: Title;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.Description{
+    grid-area: Description;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.Nav{
+    grid-area: Nav;
+    font-weight: 300;
+    font-size: 2rem;
+}
+.Icons{
+    grid-area: Icons;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+@media (max-width: 1000px){
+
+    .headerGrid{
+        
+        grid-template-rows: auto-fit;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'Hero'
+        'Content';
+        gap: 0;
+        width: 100%;
+        padding:0 2rem 0 2rem;
+    }
+
+    .heroGrid{
+        position:static;
+    }
+    
+    .heroSelfie{
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .miniWorkGrid{
+        grid-template-rows: auto-fit;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'Year'
+        'WorkSummary';
+    }
+
+    .oneByTwoGrid{
+        grid-template-rows: auto-fit;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'col1'
+        'col2';
+        padding: 2rem 0 2rem 0;
+    }
+
+    .thumbnail{
+        max-width: 300px;
+    }
+
+}
+
+
+
+

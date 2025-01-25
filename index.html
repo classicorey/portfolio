@@ -4,165 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Corey Crooks | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Corey Crooks | Snapshot</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="utility.css">
-    <script src="scripts/greetingHandler.js"></script>
-    <script src="scripts/colorToggle.js"></script>
+    <link rel="stylesheet" href="portfolioSnapshot.css">
   </head>
-
-  <body onload="newGreeting(homeGreeting)">
-
-    <section class="homeHeader">
-      <div class="dFlex">
-        <div class="rowCollapsable fullWidth">
-          <div class="col flexAlignCenter flexJustifyCenter">
-            <img class="smallIcon clickable" src="graphics/pics/classicIcon.png" alt="ClassiCorey Icon" onclick="window.location.href='index.html'">
-          </div>
-          <div class="col flexTriple flexJustifyCenter smallDNone">
-            <h3 class="textCenter" id="homeGreeting"></h3>
-          </div>
+  <body>
+    <div class="headerGrid pt-8">
+        <div class="Hero text-center">
+            <div class="heroGrid pt-4">
+                <div class="Name font-serif text-7xl">Corey Crooks</div>
+                <div class="Title font-thin">Software Development Snapshot</div>
+                <div class="Description subText">A single webpage built with Tailwind to showcase my front-end skills and software development projects.</div>
+                <div class="Nav">
+                  <div class="flex  h-full justify-content-center">
+                    <img class="object-contain heroSelfie" src="graphics/pics/eyesToCameraSelfie.png">
+                  </div>
+                </div>
+                <div class="Icons">
+                  <img class='navLogo inline-block mx-3 clickable' src="graphics/svgs/github-mark-white.svg" onclick="window.location.href='https://github.com/classicorey?tab=repositories'">
+                  <img class='navLogo inline-block mx-3 clickable' src="graphics/pics/LI-In-Bug.png" onclick="window.location.href='https://www.linkedin.com/in/corey-crooks-a96a71230/'">
+                </div>
+                </div>
         </div>
-      </div>
-    </section>      
-
-    <section class="underConstructionAlert clickable" onclick="colorToggle(); toggleHomeBannerText()">
-      <div class="dFlex">
-        <div class="row fullWidth alertRow">
-          <div class="col flexAlignCenter flexJustifyCenter">
-            <img class="alertLogo" src="graphics/svgs/alertI.svg" alt="alertLogo">
-          </div>
-          <div class="col flexTriple  flexJustifyCenter">
-            <h1 id="inverterBannerH1">Need some new colors?</h1>
-            <p id="inverterBannerP">Click here to invert this site's color palette.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="flowerGreeting">
-      <div class="dFlex flowerContainer">
-        <div class="row fullWidth">
-          <div class="col smallDNone">
-          </div>
-          <div class="col smallDNone">
-          </div>
-          <div class="col flexAlignCenter flexJustifyCenter greetingDisplay">
-            <img class="selfie" src="graphics/pics/selfie.png" alt="A picture of me.">
-            <h1 class="name">Corey Crooks</h1>
-            <div>
-              <h2 class="homeH2">Front&#45;End Software Programming</h2>
-                <h2 class="homeH2">&#47;&#47;Portfolio Website</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="dFlex flexJustifyCenter logicSection noOverflow">
-      <img class="logic0" src="graphics/pics/LogicGates.png" alt="Logic gates.">
-      <img class="logic1" src="graphics/pics/LogicGates1.png" alt="More logic gates.">  
-      <div class="logicDiv">
-        <div class="rowCollapsable">
-          <div class="col flexJustifyCenter flexAlignCenter centerOnSmall">
-            <svg class="questionMarkDot" width="50%" height="50%" viewBox="0 0 364 614" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
-              <g transform="matrix(1,0,0,1,-688,-77)">
-                  <g id="Question-Mark" serif:id="Question Mark">
-                      <g transform="matrix(3.84956,0,0,3.84956,-2439.31,-1665.37)">
-                          <circle cx="863.376" cy="594.758" r="17.14"/>
-                      </g>
-                      <path class="questionMarkCurve" d="M760.079,280.315C732.169,242.697 770.009,161.34 832.888,145.011C916.252,123.362 986.578,180.56 988.82,252.404C990.801,315.87 936.034,350.393 878.697,408.034C834.382,452.583 865.045,464.764 865.045,509.663"/>
-                  </g>
-              </g>
-            </svg>
-          </div>
-          <div class="col flexTriple centerOnSmall bioContainer">
-            <h4><span class="questionHeader">Who am I?</span></h4>
-            <h5>I am <span class="bioName centerOnSmall">Corey Crooks</span>&#59; a front&#45;end programmer.</h5>
-            <br>
+        <div class="Content font-sans font-thin">
             <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I started my enthusiasm back in middle school when I got a hold of HTML. The idea of writing at a keyboard, and making fantastic images appear on screen was simply fascinating. I started with an early local site with no hosting whatsoever written purely in HTML.</p>
+            
             <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My intrigue has grown since then along with the innovations of the language. I have bolstered my own skillsets through both self&ndash;taught work, and peer&ndash;to&ndash;peer work through volunteer and academic studies. I am thankful for the skills I have
-                                      developed with my Bachelor's degree in software programming, and enthusiastic towards the further knowledge I will gather in my professional work going forward.
-            </p>
-            <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today, I use my free time engaging in new technological systems to further expand my knowledge. The ever&ndash;changing climate of website design draws me in, but I am no stranger to back&ndash;end work in C&#35;, Python, or even SQL! 
-              This site serves as both a benchmark for my current front&#45;end progress, and also a portfolio for what I've done in the past! I have pages for my work experience, photography hobby, and design philosophies.</p>
-          </div>
-        </div>
-      </div>  
-    </section>
+                                      developed with my <span class="importantText">Bachelor's degree in software programming</span>, and enthusiastic towards the further knowledge I will gather in my professional work going forward.</p>
 
-    <section class="pageSelection noOverflow bright">
-      <h2 class="textCenter marginT2r lightModeTextHelper strongest paddingT2r paddingB2r"><span class="alertText">Click</span> a section <span class="alertText">below</span> to find out more</h1>
-      <div class="spacer">
-        <div class="rowCollapsable fullWidth clickable navigationRow centerOnSmall" onclick="window.location.href='workHistory.html'">
-          <div class="col">
-            <img class="smallDNone" src="graphics/pics/WorkHistoryCode.png" alt="A picture of my watch.">
-          </div>
-          <div class="col flexTriple pageSelectTextPadding centerOnSmall">
-            <div class="row">
-               <div class="col">
-                <h3 class="workHistoryHeader navTitle">See my professional history!</h3>
-                <img class="dNone smallDBlock navigationThumbnailImg" src="graphics/pics/WorkHistoryCode.png" alt="A picture of my watch.">
-              </div>
-            </div>
-            <div class="row pageSelectPtext paddingR20 smallReset centerOnSmall">
-                <div class="col navTextContainer">
-                  <p class="navText">There are a number of things that you might be interested in over on my professional side! Over on this page you can see everything; personal projects, volunteer experience, you name it! 
-                    I have had a lot of experience solidifying my career choice as a programmer, and there's plenty of content to showcase that! Allow me to show you what I've been up to from beta testing software to strategizing live&#45;service markets.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <p class="multiParagraph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today, I use my free time engaging in new technological systems to further expand my knowledge. The ever&ndash;changing climate of website design draws me in, but I am no stranger to back&ndash;end work in <span class="importantText">C&#35;, Python, or even SQL</span>! 
+              This site serves as both a benchmark for my current <span class="importantText">front&#45;end</span> progress, and also a portfolio for what I've done in the past! I have pages for my work experience, photography hobby, and design philosophies.</p>
+            
+            <section class="newHeader py-3 px-3">Work History</section>
 
-      <div class="spacer">
-        <div class="rowCollapsable fullWidth clickable navigationRow centerOnSmall" onclick="window.location.href='photography.html'">
-          
-          <div class="col flexDouble pageSelectTextPadding centerOnSmall textRight paddingR3r paddingL20">
-            <div class="row">
-              <div class="col">
-                <h3 class="philosophyHeader navTitle">See my photography!</h3>
-                <img class="dNone smallDBlock navigationThumbnailImg" src="graphics/pics/PhotographyCharlie.jpg" alt="A picture of a dog.">
+            <div class="miniWorkGrid">
+              <div class="year"></div>
+              <div class="workTitle pt-2">
+                <img class="workLogo" src="graphics/svgs/PGIPTechLogo.svg">
               </div>
             </div>
-            <div class="row pageSelectPtext smallReset centerOnSmall">
-                <div class="col navTextContainer">
-                  <p class="navText">Come and see some of my photography! Although it's all just a hobby right now, I've put some practice into learning shot composition and camera best&#45;practices. None of these shots have been taken of confidential subjects, and all people in my pictures have given express consent to be hosted on this website.
-                    I host these images for public viewing because I believe it gives prospective employers a great view into what elements I think are important in how I develop presentations.</p>
+            <div class="miniWorkGrid">
+                <div class="Year">2024</div>
+                <div class="WorkSummary">
+                    <p class="workTitle pt-2">Website Developer Intern</p>
+                    <p>A <span class="importantText">structured internship</span> hosted by the PGIP organization. During this internship, I built upon strong <span class="importantText">website development</span> foundational skills acquired through my Bachelor's program at Purdue University Global. My progress on website development in this internship was presented in the form of <span class="importantText">Agile Standups</span> measured in <span class="importantText">Sprints</span> and <span class="importantText">Story Points</span>.
+                    </p>
                 </div>
             </div>
-          </div>
-          <div class="col">
-            <img class="smallDNone" src="graphics/pics/PhotographyCharlie.jpg" alt="A picture of a dog.">
-          </div>
-        </div>
-      </div>
+            <div class="spacer"></div>
 
-      <div class="spacer">
-      <div class="rowCollapsable fullWidth clickable navigationRow centerOnSmall" onclick="window.location.href='philosophies.html'">
-        <div class="col">
-          <img class="smallDNone" src="graphics/pics/Philosophies.jpg" alt="A picture of a stuffed animal that serves as my rubber duck.">
-        </div>
-        <div class="col flexTriple pageSelectTextPadding centerOnSmall">
-          <div class="row">
-             <div class="col">
-              <h3 class="philosophyHeader navTitle">See my decision making!</h3>
-              <img class="dNone smallDBlock navigationThumbnailImg" src="graphics/pics/Philosophies.jpg" alt="A picture of a stuffed animal that serves as my rubber duck.">
-            </div>
-          </div>
-          <div class="row pageSelectPtext paddingR20 smallReset centerOnSmall">
-              <div class="col navTextContainer">
-              <p class="navText">Believe it or not, I put quite a bit of thought into what I put down and why I need it. Over on this page, you can learn a little bit about my decision-making process. Here, I have a QnA of sorts that describes my take on programming practices and how I utilize them in my projects.
-                  Want to know why I would use utility classes more depending on the project? Curious as to my thoughts on visually dynamic elements in client&#45;side presentations? It's all right here.</p>
+            <div class="miniWorkGrid">
+              <div class="year"></div>
+              <div class="workTitle pt-2">
+                <img class="workLogo" src="graphics/svgs/VeoLogo.svg">
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-        <div class="smallSpacer"></div>
-    </section>
 
+            <div class="miniWorkGrid">
+              <div class="Year">2022</div>
+              <div class="WorkSummary">
+                  <p class="workTitle pt-2">App Beta Testing</p>
+                  <p>A position in Seattle Washington in which I was hired as a Live Service Technicican for micromobility deployment and strategy. I routinely <span class="importantText">beta-tested</span> software used in the field for <span class="importantText">industry-wide optimizations</span>.
+                  </p>
+              </div>
+          </div>
+            
+            <section class="newHeader py-3 px-3">Projects</section>
+            <div class="projectsGrid">
+
+              <div class="project clickable pt-4 pr-3 pb-4" onclick="window.location.href='home.html'">
+                <div class="oneByTwoGrid">
+                  <div class="col1 p-4">
+                    <div class="thumbnail">
+                      <img class="projectThumbnail p-1" src="graphics/pics/homeBackgroundFlower.png">
+                    </div>
+                  </div>
+                  <div class="col2">
+                    <p class="workTitle pt-2">Personal Development Website</p>
+                    <p>My personal website that showcases web development skills I honed after an internship, featuring <span class="importantText">responsive design</span>, <span class="importantText">accessibility</span>, and <span class="importantText">performance optimization techniques</span>, along with projects that demonstrate my growth as a developer.</p>
+                  </div>
+                </div>
+                <p class="linkText">Check out the website <span class=link>here.</span></p>
+              </div>
+
+              <div class="project clickable pt-4 pr-3 pb-4" onclick="window.location.href='workHistory.html#portfolioWebsiteSummary'">
+                <div class="oneByTwoGrid">
+                  <div class="col1 p-4">
+                    <div class="thumbnail">
+                      <img class="projectThumbnail p-1" src="graphics/pics/legacyScreenshots/homePage.jpg">
+                    </div>
+                  </div>
+                  <div class="col2">
+                    <p class="workTitle pt-2">Bootstrap Framework Project</p>
+                    <p>A legacy website served as a precursor to the above developmental showcase. Uses the <span class="importantText">Bootstrap Framework</span> to provide vital experience with <span class="importantText">framework integrations</span>.</p>
+                  </div>
+                </div>
+                <p class="linkText">Check out the summary <span class=link>here.</span></p>
+              </div>
+              
+              <div class="project clickable pt-4 pr-3 pb-4" onclick="window.location.href='https://github.com/classicorey/What2Eat'">
+                <div class="oneByTwoGrid">
+                  <div class="col1 p-4">
+                    <div class="thumbnail">
+                      <img class="projectThumbnail p-1" src="graphics/pics/what2EatUI.png">
+                    </div>
+                  </div>
+                  <div class="col2">
+                    <p class="workTitle pt-2">What2Eat Dinner Selector</p>
+                    <p>A <span class="importantText">C#</span> project made in <span class="importantText">Microsoft Visual Studio's Form Designer</span>. Users could add to a CSV list of restaurant names, delete from that list, or roll a random entry in the list to decide on dinner for the night.</p>
+                  </div>
+                </div>
+                
+                <p class="linkText">Check out the GitHub <span class=link>here.</span></p>
+              </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="spacer"></div>
+    <script src="scripts/workProjectTransparencyHandler.js"></script>
   </body>
 </html>
