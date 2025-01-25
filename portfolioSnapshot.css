@@ -189,6 +189,7 @@ span.importantText{
 
     .heroGrid{
         position:static;
+        height: 800px;
     }
     
     .heroSelfie{
