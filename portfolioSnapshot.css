@@ -41,7 +41,7 @@ span.importantText{
     opacity: .4;
     width: 50px;
 }
-.navLogo:hover{
+.navLogo:hover, .navLogo:active, .navLogo:focus{
     opacity: .7;
     scale: 1.1;
     transition: .3s ease-in-out;
@@ -62,7 +62,7 @@ span.importantText{
     user-select: none;
 }
 
-.project:hover{
+.project:hover, .project:active, .project:focus{
     background-color: rgba(255, 255, 255, 0.05);
 }
 .thumbnail{

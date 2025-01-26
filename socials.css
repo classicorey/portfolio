@@ -14,6 +14,11 @@ body{
 .icon{
     width: 75px;
 }
+.icon:hover, .icon:focus, .icon:active{
+    opacity: .6;
+    scale: 1.1;
+    transition: .3s;
+}
 .banner{
     position: relative;
 }
