@@ -7,7 +7,7 @@ body{
     background-color: green;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100lvh;
+    height: calc(100lvh+70px);
 }
 
 p{
