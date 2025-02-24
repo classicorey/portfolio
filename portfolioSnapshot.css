@@ -3,6 +3,7 @@ html{
     background-color: green;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: auto 200vh;
 }
 
 p{
