@@ -3,10 +3,6 @@ html{
     background-color: green;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: calc(100lvh + 70px);
-}
-
-body{
 }
 
 p{
